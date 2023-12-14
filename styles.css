@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+:root{
+    /* --color-dark-background:#404040; */
+    /* --color-dark-primary:#f8f8f8; */
+    --color-secondary:#b99100;
+    --color-background:#dfdfdf;
+    --color-primary:#404040;
+    --blur1: blur(0);
+    --blur2: blur(1.5px);
+}
+
+.dark-mode-variables{
+  --color-secondary:#e8be2b;
+  --color-background:#404040;
+  --color-primary:#dfdfdf;
+  --blur1: blur(1.5px);
+  --blur2: blur(0px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+}
+
+body{
+  cursor: url('/images/icons/lego-hand.svg'), auto;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  user-select: none;
+  overflow: hidden;
+  color: var(--color-background);
+  background-color: var(--color-background);
+}
+
+.nav-bar{
+    position: fixed;
+    margin-top: 36px;
+    margin-left: 111px;
+    display: flex;
+    width: 1218px;
+    height: 63px;
+}
+
+img.bauchaste_logo{
+    width: 193px;
+    height: 62.942px;
+    flex-shrink: 0;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 295px;
+}
+
+.calendar-start{
+    color: var(--color-secondary);
+}
+
+.calendar-arrow{
+    color: var(--color-secondary);
+}
+
+.calendar:hover .calendar-start,
+.calendar .calendar-arrow{
+    display: none;
+}
+.calendar:hover .calendar-arrow{
+    display: inline;
+}
+
+/* .calendar:hover h5{
+    
+} */
+
+.unser_team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 84px;
+}
+
+.pixel-person{
+    color: var(--color-primary);
+}
+
+/* color switcher */
+
+.switch {
+  position: relative;
+  margin-left: 123px;
+  margin-top: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
+  
+}
+
+.slider {
+  display: flex;
+  border: 3px solid var(--color-primary);
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 83px;
+  height: 40px;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.slider:before {
+  display: flex;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 6px;
+  bottom: 4px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.pixel-sun{
+  z-index: 1;
+  color: #fdfdfd;
+  filter: var(--blur1);
+}
+
+.pixel-moon{
+  color: #404040;
+  z-index: 1;
+  filter: var(--blur2);
+}
+
+input:checked + .slider:before {
+  transform: translateX(38px);
+}
+
+
+/* Main Content */
+.main-content{
+  margin-top: 98px;
+  width: 1218px;
+  height: 100% ;
+}
+
+.gallery{
+  display: flex;
+  color: var(--color-primary);
+
+}
+/* footer */
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  margin-left: 111px;
+}
+
+.social-media{
+  display: flex;
+  margin-bottom: 122px;
+  width: 1218px;
+}
+
+.youtube_link{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.instagram_link{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-left: 70px;
+}
+
