@@ -25,9 +25,9 @@
   text-decoration: 0;
   box-sizing: border-box;
 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: 100;
+  -moz-appearance: 100;
+  appearance: 100;
 }
 
 body{
