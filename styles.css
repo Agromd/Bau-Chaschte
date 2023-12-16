@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 :root{
-    /* --color-dark-background:#404040; */
-    /* --color-dark-primary:#f8f8f8; */
-    --color-secondary:#b99100;
-    --color-background:#dfdfdf;
-    --color-primary:#404040;
-    --blur1: blur(0);
-    --blur2: blur(1.5px);
+  /* --color-dark-background:#404040; */
+  /* --color-dark-primary:#f8f8f8; */
+  --color-secondary:#b99100;
+  --color-background:#dfdfdf;
+  --color-primary:#404040;
+  --blur1: blur(0);
+  --blur2: blur(1.5px);
 }
 
 .dark-mode-variables{
@@ -24,6 +24,10 @@
   outline: 0;
   text-decoration: 0;
   box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 body{
