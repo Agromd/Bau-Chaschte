@@ -7,13 +7,13 @@
 }
 
 body{
+    height: 100%;
+    overflow-y: scroll;
     margin: 0;
     background: var(--background-light);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
 
     font-family: Inter;
     font-size: 4vw;
@@ -32,6 +32,7 @@ header{
     width: 86vw;
     height: 20vh;
     margin-top: 7vh;
+    margin-bottom: 10vh;
 }
 
 header a{
@@ -44,11 +45,12 @@ header h4{
 
 /* main section */
 
+/* section mit news */
 .section-neuigkeiten{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    height: 50vh;
 }
 
 .section-neuigkeiten h1{
@@ -58,7 +60,11 @@ header h4{
 }
 
 .section-neuigkeiten h4{
-    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 8vh;
     text-transform: uppercase;
     color: var(--background-dark);
     text-align: center;
@@ -68,6 +74,7 @@ header h4{
     font-weight: 900;
     line-height: normal;
     letter-spacing: .5vw;
+    background: rgba(255, 236, 60, 0.52);
 }
 
 .section-neuigkeiten h5{
@@ -81,6 +88,8 @@ header h4{
     line-height: normal;
     letter-spacing: .3vw;
     text-transform: uppercase;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .container-news{
@@ -112,5 +121,14 @@ header h4{
 
 .galary-section{
     width: 100vw;
-    height: 30vh;
+    height: 80vh;
+    background: var(--background-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.galary-section h1{
+    color: var(--background-light);
+    text-transform: uppercase;
+    margin-top: 13vh;
 }

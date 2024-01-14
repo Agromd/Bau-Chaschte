@@ -46,46 +46,46 @@ body{
 }
 
 .nav-bar{
-    position: fixed;
-    margin-top: 36px;
-    margin-left: 111px;
-    display: flex;
-    width: 1218px;
-    height: 63px;
+  position: fixed;
+  margin-top: 36px;
+  margin-left: 111px;
+  display: flex;
+  width: 1218px;
+  height: 63px;
 }
 
 img.bauchaste_logo{
-    width: 193px;
-    height: 62.942px;
-    flex-shrink: 0;
+  width: 193px;
+  height: 62.942px;
+  flex-shrink: 0;
 }
 
 .calendar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-secondary);
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-left: 295px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 295px;
 }
 
 .calendar-start{
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .calendar-arrow{
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .calendar:hover .calendar-start,
 .calendar .calendar-arrow{
-    display: none;
+  display: none;
 }
 .calendar:hover .calendar-arrow{
-    display: inline;
+  display: inline;
 }
 
 /* .calendar:hover h5{
