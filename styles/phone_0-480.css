@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100%;
+    height: 100;
     overflow-y: scroll;
     margin: 0;
     background: var(--background-light);
@@ -31,9 +31,9 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 86vw;
-    height: 20vh;
-    margin-top: 7vh;
-    margin-bottom: 10vh;
+    height: 100px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
 header a{
@@ -41,7 +41,7 @@ header a{
 }
 
 header h4{
-    margin-top: 10vh;
+    margin-top: 100px;
 }
 
 /* main section */
@@ -51,13 +51,13 @@ header h4{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 500px;
 }
 
 .section-neuigkeiten h1{
     text-transform: uppercase;
     color: var(--background-dark);
-    margin-bottom: 1vw;
+    margin-bottom: 10px;
 }
 
 .section-neuigkeiten h4{
@@ -65,7 +65,7 @@ header h4{
     justify-content: center;
     align-items: center;
     width: 90vw;
-    height: 8vh;
+    height: 80px;
     text-transform: uppercase;
     color: var(--background-dark);
     text-align: center;
@@ -89,8 +89,8 @@ header h4{
     line-height: normal;
     letter-spacing: .3vw;
     text-transform: uppercase;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .container-news{
@@ -122,10 +122,15 @@ header h4{
 
 .galary-section{
     width: 100vw;
-    height: 80vh;
+    height: auto;
     background: var(--background-dark);
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.galary-section video{
+    width: 100vw;
 }
 
 .galary-section h1{
@@ -141,15 +146,49 @@ header h4{
     height: 40vh;
     background:var(--background-light);
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 3.2px;
-text-transform: uppercase;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.links{
+    color: var(--background-dark);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.rights{
+    color: var(--background-dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-social_media{
+    width: 800px;
+    display: flex;
 }
