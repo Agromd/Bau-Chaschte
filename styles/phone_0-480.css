@@ -143,52 +143,53 @@ header h4{
 
 .footer{
     width: 100vw;
-    height: 40vh;
-    background:var(--background-light);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    margin-left: 2vw;
+    margin-bottom: 25px;
 }
 
-.social_media{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.social-media-element{
+    color: var(--background-dark);
+    text-align: left;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 3.3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 3.2px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
 }
+
+.email{
+    margin-top: 27px;
+}
+
+/* all links on website */
 
 .links{
     color: var(--background-dark);
     font-family: Inter;
-    font-size: 16px;
+    font-size: 3.3vw;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 3.2px;
     text-transform: uppercase;
-    text-decoration: none;
 }
+
+/* footer comment like "rights" */
 
 .rights{
     color: var(--background-dark);
     text-align: center;
     font-family: Inter;
-    font-size: 10px;
+    font-size: 2.2vw;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
     text-transform: uppercase;
-}
-
-.footer-social_media{
-    width: 800px;
-    display: flex;
+    margin-top: 35px;
 }
