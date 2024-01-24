@@ -44,6 +44,63 @@ header h4{
     margin-top: 100px;
 }
 
+/* Sidebar section */
+
+.sidebar {
+    display: flex;
+    height: 631px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--background-dark);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+.sidebar a {
+    color: var(--background-light);
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+}
+
+/* .sidebar a:hover {
+    color: #f1f1f1;
+} */
+
+.close-btn {
+    color: var(--background-light);
+    position: absolute;
+    top: 25px;
+    left: 170px;
+    background:none;
+    border: none;
+}
+
+.open-btn {
+    cursor: pointer;
+    color: var(--background-dark);
+    border: none;
+}
+
+.content {
+    padding: 16px;
+    transition: 0.5s;
+}
 /* main section */
 
 /* section mit news */
@@ -193,3 +250,4 @@ header h4{
     text-transform: uppercase;
     margin-top: 35px;
 }
+

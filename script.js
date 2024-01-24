@@ -1,4 +1,3 @@
-
 const themeSwitcher = document.getElementById('theme-switch');
 
 themeSwitcher.addEventListener('change', () => {
@@ -37,3 +36,14 @@ function updateSlider() {
     // for (const element of elementsToUpdate) {
     //    element.classList.toggle('dark-theme-style');
     // }
+
+
+// sidebar menu
+
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+
+    const content = document.querySelector('.content');
+    content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250px';
+}

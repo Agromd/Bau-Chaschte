@@ -12,7 +12,21 @@
 
     <header>
         <img type="svg" src="/images/logos/bau-chaschte-logo-for-light.svg" width="216px">
-        <a href="#"><iconify-icon icon="pixelarticons:menu" width="45" height="45"></iconify-icon></a>
+
+        <!-- side bar menu  -->
+            <a href="#" class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu" width="45" height="45"></iconify-icon></a>
+            <div class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:close" width="45" height="45"></iconify-icon></button>
+                <!-- Your sidebar content goes here -->
+                <ul>
+                    <li><a href="#">Angebot</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Preise</a></li>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#" style="color:#E8BE2B;">FAQ</a></li>
+                </ul>
+            </div>
         <h4>Willkommen in BAU-CHASCHTE</h4>
     </header>
 
@@ -89,4 +103,4 @@
         <script src="/script.js" media="screen and (max-width: 480px)"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
-</html>
+</html> 
