@@ -201,7 +201,6 @@ header h4{
 .footer{
     width: 100vw;
     height: auto;
-    margin-left: 2vw;
     margin-bottom: 25px;
 }
 
@@ -209,7 +208,7 @@ header h4{
     color: var(--background-dark);
     text-align: left;
     font-family: Inter;
-    font-size: 3.3vw;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

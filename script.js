@@ -41,9 +41,9 @@ function updateSlider() {
 // sidebar menu
 
 function toggleSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
 
-    const content = document.querySelector('.content');
-    content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250px';
+  const content = document.querySelector('.content');
+  content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250px';
 }
