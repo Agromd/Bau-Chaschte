@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
-
+@import url(phone_0-480.css);
 :root{
   /* --color-dark-background:#404040; */
   /* --color-dark-primary:#f8f8f8; */
