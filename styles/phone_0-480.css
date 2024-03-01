@@ -374,31 +374,44 @@
     /* end of sidebar section */
 
     .section-neuigkeiten{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .section-neuigkeiten h1{
-        
+        text-transform: uppercase;
+        align-items: center;
     }
 
     .section-neuigkeiten h4{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        width: 80vw;
+        height: 80px;
+        background-color: rgba(255, 236, 60, 0.52);
     }
 
     .section-neuigkeiten h5{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .container-news{
         display: none;
     }
 
-    .container-news .message{
+    /* .container-news .message{
         
     }
     .message p{
         
-    }
+    } */
 
     /* Galerie Section */
 
@@ -424,12 +437,22 @@
     /* footer */
 
     .footer{
-        
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.8px;
+        text-transform: uppercase;
+    }
+
+    .social-media iconify-icon{
+        width: 20vw;
     }
 
     .social-media-element{
-        
-    }  
+        list-style: none;
+    }
 
     .email{
         
