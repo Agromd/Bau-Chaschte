@@ -1,11 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+<<<<<<< HEAD:styles/styles.css
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-dark);
+    transition: opacity 0.75s, visibility 0.75s;
+    }
+
+    .loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+    }
+    .loader::after{
+    content: "";
+    width:85px;
+    height:50px;
+    --g1:conic-gradient(from  90deg at left   3px top   3px,#0000 90deg,#fff 0);
+    --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#fff 0);
+    background:var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+    background-position:left,center,right;
+    background-repeat:no-repeat;
+    animation:s9 1s infinite;
+    }
+    @keyframes s9 {
+    0%   {background-size:25px 50% ,25px 50% ,25px 50%}
+    25%  {background-size:25px 100%,25px 50% ,25px 50%}
+    50%  {background-size:25px 50% ,25px 100%,25px 50%}
+    75%  {background-size:25px 50% ,25px 50% ,25px 100%}
+    100% {background-size:25px 50% ,25px 50% ,25px 50%}
+    }
+
+    :root{
+=======
 :root{
+>>>>>>> 816d8746deb8e6a2b94febbcd91937086198be1a:styles/phone_0-480.css
     --background-light: #DFDFDF;
     --background-dark: #404040;
     --yellow-base: #E8BE2B;
     }
 
+<<<<<<< HEAD:styles/styles.css
+@media (max-width: 480px){
+
+    body{
+    height: 100;
+    overflow-y: scroll;
+    margin: 0;
+    background: var(--background-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: Inter;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: var(--background-dark);
+=======
     .loader{
         position: fixed;
         top: 0;
@@ -17,6 +78,7 @@
         justify-content: center;
         background: var(--background-dark);
         transition: opacity 0.75s, visibility 0.75s;
+>>>>>>> 816d8746deb8e6a2b94febbcd91937086198be1a:styles/phone_0-480.css
     }
 
         .loader--hidden{
@@ -290,6 +352,11 @@
 
 }
 
+<<<<<<< HEAD:styles/styles.css
+@media(min-width: 481px) {
+    body{
+    
+=======
 @media (min-width: 481px){
 
     header{
@@ -468,6 +535,7 @@
 
     .rights{
         
+>>>>>>> 816d8746deb8e6a2b94febbcd91937086198be1a:styles/phone_0-480.css
     }
 }
 
