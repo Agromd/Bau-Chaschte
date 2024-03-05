@@ -134,6 +134,7 @@
         cursor: pointer;
         color: var(--background-dark);
         border: none;
+        width: 8vw;
     }
 
     .content {
