@@ -492,7 +492,41 @@
 }
 
 @media (min-width: 770px){
-    body{
-        background-color: red;
+    header{
+        display: flex;
+        justify-content: flex-end;
+    }
+    header img{
+        width: 511px;
+        margin-right: 21vw;
+    }
+
+    /*sidebar section  */
+
+    .sidebar{
+        display: flex;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--background-dark);
+        overflow-x: hidden;
+        transition: 0.1s;
+        padding-top: 60px;
+        margin-top: 0;
+    }
+
+    .close-btn {
+        color: var(--background-light);
+        position: absolute;
+        top: 25px;
+        left: 170px;
+        background:none;
+        border: none;
+    }
+
+    .sidebarbutton{
+        
     }
 }
