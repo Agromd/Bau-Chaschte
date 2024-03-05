@@ -21,7 +21,7 @@ function toggleSidebar() {
   sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
 
   const content = document.querySelector('.content');
-  content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250px';
+  content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250';
 }
 
 // loader

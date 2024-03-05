@@ -161,7 +161,7 @@
         justify-content: center;
         align-items: center;
         width: 90vw;
-        height: 80px;
+        height: 8vw;
         text-transform: uppercase;
         color: var(--background-dark);
         text-align: center;
@@ -393,7 +393,7 @@
         text-align: center;
         font-size: 3vw;
         width: 80vw;
-        height: 80px;
+        height: 8vw;
         background-color: rgba(255, 236, 60, 0.52);
         text-transform: uppercase;
     }
@@ -529,4 +529,66 @@
     .sidebarbutton{
         
     }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 86vw;
+        height: 100px;
+        margin-top: 70px;
+    }   
+
+    header a{
+        
+    }
+
+    header h4{
+        
+        
+    }
+
+    /* Sidebar section */
+
+    .section-neuigkeiten{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-top: 15vw;
+    }
+
+    .section-neuigkeiten h1{
+        text-transform: uppercase;
+        align-items: center;
+    }
+
+    .section-neuigkeiten h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3vw;
+        width: 80vw;
+        height: 8vw;
+        background-color: rgba(255, 236, 60, 0.52);
+        text-transform: uppercase;
+    }
+
+    .section-neuigkeiten h5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-news{
+        display: none;
+    }
+    .arrow_neu{
+        color: #404040;
+
+    }
 }
+
