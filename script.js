@@ -1,4 +1,3 @@
-
 // theme swither tool
 // const themeSwitcher = document.getElementById('theme-switch');
 
