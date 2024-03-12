@@ -33,3 +33,18 @@ window.addEventListener("load", () =>{
       document.body.removeChild(loader);
   });
 });
+
+// Get the video
+var video = document.getElementById("galary_vid");
+// Get the button
+var btn = document.getElementById("pause_btn");
+// Pause and play the video, and change the button text
+function vid_pause() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "PAUSE";
+  } else {
+    video.pause();
+    btn.innerHTML = "PLAY";
+  }
+}

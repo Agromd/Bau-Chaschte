@@ -34,7 +34,7 @@
                     <li><a href="#" style="color:#E8BE2B;">FAQ</a></li>
                 </ul>
             </div>
-        <h4>Willkommen in BAU-CHASCHTE</h4>
+        <h4>Willkommen in BAU-CHASCHTE!</h4>
     </header>
 
     <div class="section-neuigkeiten">
@@ -51,17 +51,19 @@
             alle aktuellen BAU-CHASCHTE <br> Nachrichten werden hier erscheinen.
         </h4>
 
-        <h5>siehe mehr <iconify-icon icon="pixelarticons:arrow-right" class="arrow_neu"></iconify-icon> </h5>
+        <h5><a href="#" >siehe mehr<iconify-icon icon="pixelarticons:arrow-right" class="arrow_neu"></iconify-icon> </a></h5></a>
     </div>
 
 
     <div class="galary-section">
 
-        <div class="video-box">
-            <video autoplay loop muted playsinline>
-                <source src="/videos/STG_vSnap (1).mp4" type="video/mp4" />
-            </video>
-        </div>
+         <!-- The video -->
+    <video autoplay muted loop id="galary_vid">
+        <source src="/videos/STG_vSnap (1).mp4" type="video/mp4">
+    </video>
+        <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="pause_btn" onclick="vid_pause()">PAUSE</button>
+  </div> 
 
     </div>
 
