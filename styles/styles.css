@@ -211,22 +211,20 @@ body {
     margin-bottom: 10px;
   }
 
+  .neuigkeiten-block{
+    width: 80%;
+    height: 10%;
+    background-color: rgba(255, 236, 60, 0.52);
+  }
+
   .section-neuigkeiten h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 14vw;
-    text-transform: uppercase;
-    color: var(--background-dark);
     text-align: center;
-    font-family: Inter;
-    font-size: 3.1vw;
-    font-style: normal;
+    font-size: 2vw;
+    text-transform: uppercase;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.5vw;
-    background: rgba(255, 236, 60, 0.52);
   }
 
   .section-neuigkeiten h5 {
@@ -457,15 +455,18 @@ body {
     font-size: 4vw;
   }
 
+  .neuigkeiten-block{
+    width: 120%;
+    height: 100%;
+    background-color: rgba(255, 236, 60, 0.52);
+  }
+
   .section-neuigkeiten h4 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 2vw;
-    width: 60vw;
-    height: 7vw;
-    background-color: rgba(255, 236, 60, 0.52);
     text-transform: uppercase;
     font-weight: 500;
   }
@@ -672,19 +673,31 @@ body {
     font-size: 4vw;
   }
 
+  .neuigkeiten-block{
+    width: 120%;
+    height: 100%;
+    background-color: rgba(255, 236, 60, 0.52);
+  }
+
   .section-neuigkeiten h4 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 2vw;
-    width: 60vw;
-    height: 7vw;
-    background-color: rgba(255, 236, 60, 0.52);
     text-transform: uppercase;
     font-weight: 500;
   }
 
+  .free{
+    cursor: default;
+    transition: .5s;
+  }
+  .free:hover{
+    color: green;
+    transform: rotate(-27deg);
+  }
+  
   .section-neuigkeiten h5 {
     display: flex;
     justify-content: center;
@@ -884,17 +897,23 @@ body {
     align-items: center;
   }
 
+  .neuigkeiten-block{
+    width: 120%;
+    height: 100%;
+    background-color: rgba(255, 236, 60, 0.52);
+  }
+
   .section-neuigkeiten h4 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3vw;
-    width: 80vw;
-    height: 8vw;
-    background-color: rgba(255, 236, 60, 0.52);
+    font-size: 2vw;
     text-transform: uppercase;
+    font-weight: 500;
   }
+
+  
 
   .section-neuigkeiten h5 {
     display: flex;

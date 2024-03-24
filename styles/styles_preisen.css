@@ -94,10 +94,33 @@ body {
   }
 
 
-  img{
-    width:80vw;
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
   }
 
+  .container div {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 5%;
+}
+
+  img{
+    width:60%;
+  }
+
+  .eintrittspreise-download{
+    color: var(--background-dark);
+    font-family: Inter;
+    font-size: 40%;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+  }
   /* footer */
 
   .footer {
