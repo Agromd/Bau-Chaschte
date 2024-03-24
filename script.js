@@ -17,11 +17,17 @@
 
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
-  sidebar.style.width = sidebar.style.width === '250px' ? '0' : '250px';
-
   const content = document.querySelector('.content');
-  content.style.marginLeft = content.style.marginLeft === '250px' ? '0' : '250';
+
+  // Calculate sidebar width based on viewport size
+  const viewportWidth = window.innerWidth;
+  const sidebarWidth = viewportWidth > 900 ? '25%' : '100%'; // Adjust threshold as needed
+
+  // Toggle sidebar width and adjust content margin accordingly
+  sidebar.style.width = sidebar.style.width === sidebarWidth ? '0' : sidebarWidth;
+  content.style.marginLeft = sidebar.style.width === '25%' ? '0' : '0';
 }
+
 
 // loader
 
@@ -33,6 +39,8 @@ window.addEventListener("load", () =>{
       document.body.removeChild(loader);
   });
 });
+
+// VIDEO PAUSE BUTTON
 
 // Get the video
 var video = document.getElementById("galary_vid");
@@ -48,3 +56,13 @@ function vid_pause() {
     btn.innerHTML = "PLAY";
   }
 }
+
+// gallery
+
+const images = document.querySelectorAll('.container img');
+images.forEach(image => {
+    image.addEventListener('click', function() {
+        const enlargedSrc = this.src.replace('thumbnail', 'large');
+        window.open(enlargedSrc, '_blank');
+    });
+});
