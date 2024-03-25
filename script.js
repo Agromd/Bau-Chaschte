@@ -21,13 +21,12 @@ function toggleSidebar() {
 
   // Calculate sidebar width based on viewport size
   const viewportWidth = window.innerWidth;
-  const sidebarWidth = viewportWidth > 900 ? '25%' : '100%'; // Adjust threshold as needed
+  const sidebarWidth = viewportWidth > 900 ? '27%' : '100%'; // Adjust threshold as needed
 
   // Toggle sidebar width and adjust content margin accordingly
   sidebar.style.width = sidebar.style.width === sidebarWidth ? '0' : sidebarWidth;
   content.style.marginLeft = sidebar.style.width === '25%' ? '0' : '0';
 }
-
 
 // loader
 

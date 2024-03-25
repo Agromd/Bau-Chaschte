@@ -8,6 +8,7 @@
 
 body {
     height: 100;
+    width: 100vw;
     overflow-x:hidden;
     margin: 0;
     background: var(--background-light);
@@ -99,7 +100,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 8%;
+    height: 6%;
     margin-left: 7%;
     background-color: rgba(245, 54, 48, 0.35) ;
     margin-bottom: 6%;
@@ -112,6 +113,15 @@ body {
     font-size: 40%;
     margin-left:-10%;
     font-weight: 600;
+  }
+  
+  .eroeffnung-message{
+    width: 80%;
+    align-items: center;
+    font-size: 60%;
+    margin-left:7%;
+    font-weight: 600;
+    margin-bottom: 6%;
   }
 
   thead, th{
@@ -130,7 +140,7 @@ body {
     width: 120%;
     margin: 0 5%;
     text-align: left;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 
     font-family: Inter;
     font-size: 40%;
@@ -146,6 +156,38 @@ body {
 
   .bold{
     font-weight: 900;
+  }
+
+  .small{
+    font-size: 70%;
+  }
+
+  .gruppen-message-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 6%;
+    margin-left: 7%;
+    background-color: rgba(232, 190, 43, 0.5) ;
+    margin-bottom: 20%;
+  }
+
+  .gruppen-message{
+    width: 80%;
+    align-items: center;
+    font-size: 40%;
+    margin-left:5%;
+    margin-right: 5%;
+    font-weight: 600;
+  }
+
+  .button{
+    margin-right: 5%;
+    width: 10%;
+    align-items: center;
+    font-size: 40%;
+    font-weight: 600;
   }
 
   /* footer */
