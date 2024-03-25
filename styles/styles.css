@@ -178,8 +178,8 @@ body {
     cursor: pointer;
     color: var(--background-light);
     position: absolute;
-    top: 6vw;
-    left: 42vw;
+    top: 5%;
+    left: 70%;
     border: none;
     font-size: 8vw;
   }
@@ -202,7 +202,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 500px;
+    height: 505;
   }
 
   .section-neuigkeiten h1 {
@@ -213,8 +213,9 @@ body {
 
   .neuigkeiten-block{
     width: 80%;
-    height: 10%;
+    height: 15%;
     background-color: rgba(255, 236, 60, 0.52);
+    margin-bottom: 4%;
   }
 
   .section-neuigkeiten h4 {
@@ -406,8 +407,8 @@ body {
     cursor: pointer;
     color: var(--background-light);
     position: absolute;
-    top: 25px;
-    left: 170px;
+    top: 5%;
+    left: 70%;
     background: none;
     border: none;
     font-size: 3vw;
@@ -456,7 +457,7 @@ body {
   }
 
   .neuigkeiten-block{
-    width: 120%;
+    width: 50%;
     height: 100%;
     background-color: rgba(255, 236, 60, 0.52);
   }
@@ -624,8 +625,8 @@ body {
     cursor: pointer;
     color: var(--background-light);
     position: absolute;
-    top: 25px;
-    left: 170px;
+    top: 5%;
+    left: 70%;
     background: none;
     border: none;
     font-size: 3vw;
@@ -674,9 +675,10 @@ body {
   }
 
   .neuigkeiten-block{
-    width: 120%;
-    height: 100%;
+    width: 70%;
+    height: 150%;
     background-color: rgba(255, 236, 60, 0.52);
+    margin-bottom: 1%;
   }
 
   .section-neuigkeiten h4 {
@@ -687,6 +689,7 @@ body {
     font-size: 2vw;
     text-transform: uppercase;
     font-weight: 500;
+    margin-left: 5%;
   }
 
   .free{
@@ -863,8 +866,8 @@ body {
   .close-btn {
     color: var(--background-light);
     position: absolute;
-    top: 33px;
-    left: 150px;
+    top: 5%;
+    left: 70%;
     background: none;
     border: none;
     font-size: 8vw;
