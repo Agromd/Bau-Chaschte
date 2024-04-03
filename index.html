@@ -21,47 +21,55 @@
         <img type="svg" src="/images/logos/bau-chaschte-logo-for-light.svg">
 
         <!-- side bar menu  -->
-            <a href="#" class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
+            <a class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
             <div class="sidebar">
                 <a class="close-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:close" ></iconify-icon></a>
                 <!-- Your sidebar content goes here -->
                 <ul>
                     <li style="display:none;"><a href="#">Angebot</a></li>
                     <li style="display:none;"><a href="#">Galerie</a></li>
-                    <li><a href="/index_preise.html" target="blank">Preise</a></li>
-                    <li><a href="/index_eroeffnungszeiten.html" target="blank">Öffnungszeiten</a></li>
+                    <li><a href="/index_preise.html">Preise</a></li>
+                    <li><a href="/index_eroeffnungszeiten.html">Öffnungszeiten</a></li>
                     <li><a href="/index_ueber-uns.html">Über uns</a></li>
                     <li style="display: none;"><a href="#">Kontakt</a></li>
                     <li style="display: none;"><a href="#" style="color:#E8BE2B;">FAQ</a></li>
                 </ul>
             </div>
-        <h4>Willkommen in BAU-CHASCHTE!</h4>
+            
+       
     </header>
 
-    <div class="section-neuigkeiten">
-        <span class="neuigkeiten-section-title">neuigkeiten</span>
-
-        <div class="container-news">
-            <div class="message">
-                <span class="message-text">Eröffnung sonntag 7. April 2024 <br>
-                10 - 22 Uhr <br>
-                Eintritt am Eröffnungstag FREI!</span>
-            </div>
-        
-
-            <div class="message">
-                <span class="message-text">
-                    Spezialangebot nur am Eröffnungstag erhältlich: 10er-Eintrittskarten zum Preis von 8 Eintritten!
-                </span>
-            </div>
-        
-            <div class="message">
-                <span class="message-text">
-                    <a href="#" >siehe mehr<iconify-icon icon="pixelarticons:arrow-right" class="arrow_neu"></iconify-icon> </a>
-                </span>
-            </div>
-        </div>
+    <div class="container welcome">
+        <span class="title">Willkommen in BAU-CHASCHTE!</span> 
+        <span><a href="/index_ueber-uns.html"> Was ist BAU-CHASCHTE? </a></span>
     </div>
+
+        
+
+        <div class="container news">
+            <span class="title">neuigkeiten</span>
+
+            <div class="message">
+                <span class="message-text">
+                    Eröffnung sonntag 7. April 2024 <br>
+                    10 - 22 Uhr <br>
+                    Eintritt am Eröffnungstag FREI!
+                </span>
+            </div>
+            
+            <div class="message">
+                <span class="message-text">
+                    Spezialangebot nur am Eröffnungstag erhältlich: <br>
+                    10er-Eintrittskarten zum Preis von 8 Eintritten!
+                </span>
+            </div>
+            
+            
+                <span class="message-text" style="display: none;">
+                    <a href="#" >siehe mehr </a>
+                </span>
+            
+        </div>
     
 
 
@@ -77,7 +85,27 @@
 
     </div>
 
-    <div class="footer">
+
+
+    <footer class="footer" style="display: none;">
+        <div class="footer-content">
+          <nav>
+            <ul>
+              <li><a href="https://www.instagram.com/bau_chaschte/">Instagram</a></li>
+              <li><a href="http://www.youtube.com/@BAU-CHASCHTE">YouTube</a></li>
+              <li><a href="mailto: info@bau-chaschte.ch">E-Mail</a></li>
+              <li><a href="https://maps.app.goo.gl/XA2usqfvCgVXHzkM8">Oberstrasse 298 9014 St. Gallen</a></li>
+            </ul>
+          </nav>
+          <div class="rights">&copy;bau-chaschte 2024 alle rechte sind geschützt</div>
+        </div>
+      </footer>
+
+
+
+
+
+    <!-- <div class="container">
         <ul class="social-media">
             <li class="social-media-element"> <a href="https://www.instagram.com/bau_chaschte/" target="_blank" class="links"> Instagram</a><iconify-icon icon="pixelarticons:open"></iconify-icon></li>
             <li class="social-media-element"> <a href="http://www.youtube.com/@BAU-CHASCHTE" target="_blank" class="links"> YouTube</a><iconify-icon icon="pixelarticons:open"></iconify-icon></li>
@@ -85,7 +113,22 @@
             <li class="social-media-element">Standort: <a href="https://maps.app.goo.gl/XA2usqfvCgVXHzkM8" target="_blank" class="links"> Oberstrasse 298 <br> 9014 St. Gallen </a></li>
         </ul>
         <div class="rights">©bau-chaschte alle rechte sind geschützt</div>
-    </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- <div class="footer">
         <ul class="footer-social_media">
             <li class="social_media"> Instagram <iconify-icon icon="pixelarticons:open" width="19" height="19"></iconify-icon></iconify-icon></li>
@@ -120,7 +163,7 @@
             </label>
                 
         </div> -->
-        <script src="/script.js" media="screen and (max-width: 480px)" crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" crossorigin="anonymous"></script>
 </body>
 </html> 

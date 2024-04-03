@@ -42,7 +42,7 @@ body {
   }
 
   header img {
-    width: 165%;
+    width: 90%;
   }
 
   .sidebar {
@@ -107,7 +107,7 @@ body {
     
   }
 
-  .warning-message{
+  .warning-message{  
     width: 80%;
     align-items: center;
     font-size: 40%;
