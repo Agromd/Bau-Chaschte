@@ -3,6 +3,7 @@
 :root {
   --background-light: #dfdfdf;
   --background-dark: #404040;
+  --background-dark_lighter:#999999;
   --yellow-base: #e8be2b;
 }
 
@@ -17,11 +18,7 @@ body {
     
   
     font-family: Inter;
-    font-size: 4vw;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 2px;
+    font-size: 2vw;
     color: var(--background-dark);
   }
 
@@ -95,147 +92,66 @@ body {
     font-size: 8vw;
   }
 
-  .warning-message-border{
+  .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 6%;
-    margin-left: 7%;
-    background-color: rgba(245, 54, 48, 0.35) ;
-    margin-bottom: 6%;
-    
-  }
+    height: auto;
+    margin: 0 13% 13% 13%;
 
-  .warning-message{  
-    width: 80%;
-    align-items: center;
-    font-size: 40%;
-    margin-left:-10%;
-    font-weight: 600;
   }
   
-  .eroeffnung-message{
-    width: 80%;
-    align-items: center;
-    font-size: 60%;
-    margin-left:7%;
-    font-weight: 600;
-    margin-bottom: 6%;
-  }
-
-  thead, th{
-    font-weight: 600;
-  }
-
-  tr{
-    font-weight: 400;
-    transition: .3s;
-  }
-  tr:hover{
-    background-color:rgba(232, 190, 43, 0.5);
-  }
-  
-  table {
-    width: 120%;
-    margin: 0 5%;
-    text-align: left;
-    margin-bottom: 7%;
-    cursor: default;
-
-    font-family: Inter;
-    font-size: 40%;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 2px;
-    color: var(--background-dark);
-  }
-  th, td {
-    padding: 1.5%;
-  }
-
-  .bold{
+  .title{
+    font-size: 120%;
     font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    margin-top: 9%;
   }
 
-  .small{
-    font-size: 70%;
+  .text{
+    font-size: 90%;
+    margin-top: 5%;
   }
 
-  .gruppen-message-border{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    height: 6%;
-    margin-left: 7%;
-    background-color: rgba(232, 190, 43, 0.5) ;
-    margin-bottom: 20%;
-  }
-
-  .gruppen-message{
-    width: 80%;
-    align-items: center;
-    font-size: 40%;
-    margin-left:5%;
-    margin-right: 5%;
-    font-weight: 600;
-  }
-
-  .button{
-    margin-right: 5%;
-    width: 10%;
-    align-items: center;
-    font-size: 40%;
-    font-weight: 600;
-  }
 
   /* footer */
 
   .footer {
-    margin-left: 5%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     font-family: Inter;
-    font-size: 35%;
+    font-size: 85%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 8%;
     text-transform: uppercase;
     margin-bottom: 40px;
-    
   }
 
-  .social-media iconify-icon {
-    width: 20%;
+  nav ul{
+    list-style:none;
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li{
+    margin-bottom:2%;
   }
 
-  .social-media-element {
-    list-style: none;
-    align-items: center;
-    margin-bottom: 13px;
-  }
-
-  .email {
-    margin-top: 27px;
-  }
-
-  /* all links on website */
-
-  .links {
+  nav ul li a{
+    text-decoration:none;
     color: var(--background-dark);
-    font-family: Inter;
-    font-size: 98%;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 3%;
-    text-transform: uppercase;
+  }
+
+  nav ul li a:hover{
+    color: #947a1c;
   }
 
   /* footer comment like "rights" */
@@ -245,7 +161,7 @@ body {
     color: var(--background-dark);
     text-align: center;
     font-family: Inter;
-    font-size: 50%;
+    font-size: 60%;
     font-style: normal;
     font-weight: 200;
     line-height: normal;

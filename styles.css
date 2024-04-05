@@ -17,7 +17,6 @@ body {
 
   font-family: Inter;
   font-size: 2vw;
-  letter-spacing: .5vw;
   color: var(--background-dark);
 }
 
@@ -190,75 +189,54 @@ header img{
   /* footer */
 
   .footer {
-    width: 100vw;
-  }
-  
-  .footer-content {
+    width: 100%;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-
-  .footer-content nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0;
-    width: 100vw;
-  }
-  
-  .footer-content nav ul li {
-    display: flex;
     justify-content: center;
-    margin-left: 20px;
-  }
-  
-  .footer-content nav ul li a {
-    color: var(--background-dark);
-    text-decoration: none;
-    letter-spacing: .2vw;
-  }
-  
-  /* Media query for smaller screens */
-  @media screen and (max-width: 600px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-content nav ul li {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  }
-  
-  /* all links on website */
+    align-items: center;
 
-  .links {
-    color: var(--background-dark);
     font-family: Inter;
-    font-size: 60%;
-    font-style: italic;
-    font-weight: 400;
+    font-size: 85%;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  nav ul{
+    list-style:none;
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li{
+    margin-bottom:2%;
+    letter-spacing: .3vw;
+  }
+
+  nav ul li a{
+    text-decoration:none;
+    color: var(--background-dark);
+  }
+
+  nav ul li a:hover{
+    color: #947a1c;
   }
 
   /* footer comment like "rights" */
 
   .rights {
+    width: 100%;
     color: var(--background-dark);
     text-align: center;
     font-family: Inter;
-    font-size: 40%;
+    font-size: 60%;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
     text-transform: uppercase;
-    margin-top: 4%;
-    margin-bottom: 1%;
-    letter-spacing: .2vw;
+    margin-top: 35px;
   }
-
 

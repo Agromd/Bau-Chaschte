@@ -96,7 +96,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin: 0 13% 13% 13%;
+    margin: 0 13% 5% 13%;
 
   }
   
@@ -114,65 +114,56 @@ body {
   }
 
 
-  /* footer */
+    /* footer */
 
-  .footer {
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    font-family: Inter;
-    font-size: 35%;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 8%;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+    .footer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  
+      font-family: Inter;
+      font-size: 85%;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 8%;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+  
+    nav ul{
+      list-style:none;
+      list-style-position: inside;
+      padding: 0;
+      text-align: center;
+    }
     
-  }
-
-  .social-media iconify-icon {
-    width: 20%;
-  }
-
-  .social-media-element {
-    list-style: none;
-    align-items: center;
-    margin-bottom: 13px;
-  }
-
-  .email {
-    margin-top: 27px;
-  }
-
-  /* all links on website */
-
-  .links {
-    color: var(--background-dark);
-    font-family: Inter;
-    font-size: 98%;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 3%;
-    text-transform: uppercase;
-  }
-
-  /* footer comment like "rights" */
-
-  .rights {
-    width: 100%;
-    color: var(--background-dark);
-    text-align: center;
-    font-family: Inter;
-    font-size: 50%;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 35px;
-  }
+    nav ul li{
+      margin-bottom:2%;
+    }
+  
+    nav ul li a{
+      text-decoration:none;
+      color: var(--background-dark);
+    }
+  
+    nav ul li a:hover{
+      color: #947a1c;
+    }
+  
+    /* footer comment like "rights" */
+  
+    .rights {
+      width: 100%;
+      color: var(--background-dark);
+      text-align: center;
+      font-family: Inter;
+      font-size: 60%;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-top: 35px;
+    }
