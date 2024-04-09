@@ -43,7 +43,7 @@ header {
   flex-wrap: wrap;
   width: 86vw;
   margin-top: 70px;
-  
+  position: sticky;
 }
 
 header img{
