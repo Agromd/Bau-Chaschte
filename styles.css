@@ -182,6 +182,7 @@ header img{
   #pause_btn{
     opacity: 20%;
     transition: .3s;
+    z-index: -1;
   }
   #pause_btn:hover{
     opacity: 100%;
