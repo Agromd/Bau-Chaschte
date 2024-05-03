@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAU-CHASCHTE</title>
     <link rel="icon" href="/images/icons/lego-block-yellow.svg">
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    
+
 </head>
+
 <body>
 
-    
-    
+
+
     <div class="loader loader--hidden"></div>
 
 
-    
+
 
     <header>
         <img type="svg" src="/images/logos/bau-chaschte-logo-for-light.svg">
 
         <!-- side bar menu  -->
-            <a class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
-            <div class="sidebar">
-                <a class="close-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:close" ></iconify-icon></a>
-                <!-- Your sidebar content goes here -->
-                <ul>
-                    <li style="display:none;"><a href="#">Angebot</a></li>
-                    <li style="display:none;"><a href="#">Galerie</a></li>
-                    <li><a href="/index_preise.html">Preise</a></li>
-                    <li><a href="/index_oeffnungszeiten.html">Öffnungszeiten</a></li>
-                    <li><a href="/index_ueber-uns.html">Über uns</a></li>
-                    <li><a href="/index_schulen.html">Schulen</a></li>
-                    <li><a href="/index_teamevents.html">Teamevents</a></li>
-                    <li style="display: none;"><a href="#" style="color:#E8BE2B;">FAQ</a></li>
-                </ul>
-            </div>
-            
+        <a class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
+        <div class="sidebar">
+            <a class="close-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:close"></iconify-icon></a>
+            <!-- Your sidebar content goes here -->
+            <ul>
+                <li style="display:none;"><a href="#">Angebot</a></li>
+                <li style="display:none;"><a href="#">Galerie</a></li>
+                <li><a href="/index_preise.html">Preise</a></li>
+                <li><a href="/index_oeffnungszeiten.html">Öffnungszeiten</a></li>
+                <li><a href="/index_ueber-uns.html">Über uns</a></li>
+                <li><a href="/index_schulen.html">Schulen</a></li>
+                <li><a href="/index_teamevents.html">Teamevents</a></li>
+                <li style="display: none;"><a href="/index_faq.html" style="color:#E8BE2B;">FAQ</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <div class="container welcome">
-        <span class="title">Willkommen im BAU-CHASCHTE!</span> 
+        <span class="title">Willkommen im BAU-CHASCHTE!</span>
         <span><a href="/index_ueber-uns.html"> Was ist der BAU-CHASCHTE? </a></span>
     </div>
 
-        
 
-        <div class="container news">
-            <span class="title">Neuigkeiten</span>
 
+    <div class="container news">
+        <span class="title">Neuigkeiten</span>
+
+
+        <a href="/index_oeffnungszeiten.html">
             <div class="message">
                 <span class="message-text">
-                    Eröffnung Sonntag 7. April 2024 <br>
-                    10 - 22 Uhr <br>
-                    Eintritt am Eröffnungstag FREI!
+                    Hier finden Sie die Öffnungszeiten bis ende Mai!
                 </span>
             </div>
-            
+        </a>
+
+        <a href="/index_oeffnungszeiten.html">
             <div class="message">
                 <span class="message-text">
-                    Spezialangebot nur am Eröffnungstag erhältlich: <br>
-                    10er-Eintrittskarten zum Preis von 8 Eintritten!
+                    Der BAU-CHASCHTE hat über Auffahrt und Pfingsten offen!
+                    Wir freuen uns auf deinen Besuch!
                 </span>
             </div>
-            
-            
-                <span class="message-text" style="display: none;">
-                    <a href="#" >siehe mehr </a>
-                </span>
-            
-        </div>
-    
+        </a>
+
+
+    </div>
+
 
 
     <div class="galary-section">
 
         <!-- The video -->
-    <video autoplay muted loop id="galary_vid">
-        <source src="/videos/STG_vSnap (1).mp4" type="video/mp4">
-    </video>
+        <video autoplay muted loop id="galary_vid">
+            <source src="/videos/STG_vSnap (1).mp4" type="video/mp4">
+        </video>
         <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="pause_btn" onclick="vid_pause()">PAUSE</button>
-    </div> 
+        <button id="pause_btn" onclick="vid_pause()">PAUSE</button>
+    </div>
 
     </div>
 
@@ -89,15 +90,16 @@
 
     <footer class="footer">
         <nav>
-        <ul>
-            <li><a href="https://www.instagram.com/bau_chaschte/" target="_blank">Instagram</a></li>
-            <li><a href="http://www.youtube.com/@BAU-CHASCHTE" target="_blank">YouTube</a></li>
-            <li><a href="mailto: info@bau-chaschte.ch">E-Mail</a></li>
-            <li><a href="https://maps.app.goo.gl/XA2usqfvCgVXHzkM8" target="_blank">Oberstrasse 298 9014 St. Gallen</a></li>
-        </ul>
+            <ul>
+                <li><a href="https://www.instagram.com/bau_chaschte/" target="_blank">Instagram</a></li>
+                <li><a href="http://www.youtube.com/@BAU-CHASCHTE" target="_blank">YouTube</a></li>
+                <li><a href="mailto: info@bau-chaschte.ch">E-Mail</a></li>
+                <li><a href="https://maps.app.goo.gl/XA2usqfvCgVXHzkM8" target="_blank">Oberstrasse 298 9014 St.
+                        Gallen</a></li>
+            </ul>
         </nav>
         <div class="rights">&copy;bau-chaschte 2024 alle rechte sind geschützt</div>
-  </footer>
+    </footer>
 
 
 
@@ -138,7 +140,7 @@
 
 
 
-        <!-- <div class="nav-bar">
+    <!-- <div class="nav-bar">
             <img src="/images/logos/bau-chaschte-logo-light.svg" alt="Bau-Chaschte-logo" class="bauchaste_logo">
 
             <a href="#" class="calendar">
@@ -161,7 +163,8 @@
             </label>
                 
         </div> -->
-        <script src="/script.js"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>
