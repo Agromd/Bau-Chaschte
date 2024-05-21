@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
---background-light: #dfdfdf;
---background-dark: #404040;
---background-dark_lighter:#999999;
---yellow-base: #e8be2b;
+    --background-light: #dfdfdf;
+    --background-dark: #404040;
+    --background-dark_lighter: #999999;
+    --yellow-base: #e8be2b;
 }
 
 body {
     height: 100;
     width: 100vw;
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin: 0;
     background: var(--background-light);
     display: flex;
     flex-wrap: wrap;
-    
+
 
     font-family: Inter;
     font-size: 2vw;
@@ -92,16 +92,16 @@ header img {
     font-size: 8vw;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin: 0 13% 13% 13%;
+    padding: 0 13% 13% 13%;
 
 }
 
-.title{
+.title {
     font-size: 120%;
     font-weight: 900;
     text-transform: uppercase;
@@ -109,28 +109,29 @@ header img {
     margin-top: 9%;
 }
 
-.text{
+.text {
+    text-align: center;
     font-size: 90%;
     margin-top: 5%;
     width: 100%;
 }
 
-.border{
+.border {
     height: 170%;
     display: flex;
     background-color: rgba(232, 190, 43, 0.5);
     align-items: center;
-    padding-left: 5%;
+    justify-content: center;
 }
 
-.text div a{
-    margin-left: 5%;
+.text div a {
+    padding-left: 5%;
     font-style: italic;
     text-decoration: underline;
     color: var(--background-dark);
 }
 
-  /* footer */
+/* footer */
 
 .footer {
     width: 100%;
@@ -149,27 +150,27 @@ header img {
     margin-bottom: 40px;
 }
 
-nav ul{
-    list-style:none;
+nav ul {
+    list-style: none;
     list-style-position: inside;
     padding: 0;
     text-align: center;
 }
 
-nav ul li{
-    margin-bottom:2%;
+nav ul li {
+    margin-bottom: 2%;
 }
 
-nav ul li a{
-    text-decoration:none;
+nav ul li a {
+    text-decoration: none;
     color: var(--background-dark);
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #947a1c;
 }
 
-  /* footer comment like "rights" */
+/* footer comment like "rights" */
 
 .rights {
     width: 100%;
@@ -183,4 +184,3 @@ nav ul li a:hover{
     text-transform: uppercase;
     margin-top: 35px;
 }
-
