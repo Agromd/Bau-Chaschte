@@ -4,13 +4,13 @@
 // themeSwitcher.addEventListener('change', () => {
 //     document.documentElement.classList.toggle('dark-mode-variables');
 // });
-    // You might need to apply different styles to specific elements based on the theme
-    // You can use document.querySelectorAll or getElement(s)ByClassName/Id
-    // For example:
-    // const elementsToUpdate = document.getElementsByClassName('theme-dependent-element');
-    // for (const element of elementsToUpdate) {
-    //    element.classList.toggle('dark-theme-style');
-    // }
+// You might need to apply different styles to specific elements based on the theme
+// You can use document.querySelectorAll or getElement(s)ByClassName/Id
+// For example:
+// const elementsToUpdate = document.getElementsByClassName('theme-dependent-element');
+// for (const element of elementsToUpdate) {
+//    element.classList.toggle('dark-theme-style');
+// }
 
 
 // sidebar menu
@@ -30,12 +30,12 @@ function toggleSidebar() {
 
 // loader
 
-window.addEventListener("load", () =>{
+window.addEventListener("load", () => {
   const loader = document.querySelector(".loader")
 
   loader.classList.add("loader--hidden");
   loader.addEventListener("transitionend", () => {
-      document.body.removeChild(loader);
+    document.body.removeChild(loader);
   });
 });
 
@@ -60,8 +60,39 @@ function vid_pause() {
 
 const images = document.querySelectorAll('.container img');
 images.forEach(image => {
-    image.addEventListener('click', function() {
-        const enlargedSrc = this.src.replace('thumbnail', 'large');
-        window.open(enlargedSrc, '_blank');
-    });
+  image.addEventListener('click', function () {
+    const enlargedSrc = this.src.replace('thumbnail', 'large');
+    window.open(enlargedSrc, '_blank');
+  });
 });
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
