@@ -20,7 +20,6 @@ body {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  letter-spacing: 2px;
   color: var(--background-dark);
 }
 
@@ -130,7 +129,7 @@ header img {
   color: #4040405d;
 }
 
-.open-times-list{
+.open-times-list {
   margin: 0;
   padding: 0;
 }
@@ -161,7 +160,6 @@ table {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 5%;
   color: var(--background-dark);
 }
 
@@ -232,7 +230,6 @@ nav ul {
 
 nav ul li {
   margin-bottom: 2%;
-  letter-spacing: .2vw;
 }
 
 
