@@ -77,48 +77,19 @@
 
     <div class="galary-section">
 
-        <span class="title light">Galerie</span>
+        <div class="slider">
 
-      <div class="slider-container">
-        <div class="slides fade">
-            <img src="images/images/Bauchaste V2 Foto (1).jpg">
-            <div class="title-img"></div>
+            <img id="img-1" src="images/images/Bauchaste V2 Foto (1).jpg" alt="Image 1" />
+            <img id="img-2" src="images/images/Bauchaste V2 Foto (2).jpg" alt="Image 2" />
+            <img id="img-3" src="images/images/Bauchaste V2 Foto (3).jpg" alt="Image 3" />
+        </div>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
         </div>
 
-        <div class="slides fade">
-            <img src="images/images/Bauchaste V2 Foto (2).jpg">
-            <div class="title-img"></div>
-        </div>
-
-        <div class="slides fade">
-            <img src="images/images/Bauchaste V2 Foto (3).jpg">
-            <div class="title-img"></div>
-        </div>
-        
-        <div class="slides fade">
-            <img src="images/images/Bauchaste V2 Foto (4).jpg">
-            <div class="title-img"></div>
-        </div>
-
-        <div class="slides fade">
-            <img src="images/images/Bauchaste V2 Foto.jpg">
-            <div class="title-img"></div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)"><img src="images/icons/Pfeil rechts Box.svg" style="transform: scalex(-1);"></a>
-        <a class="next" onclick="plusSlides(1)"><img src="images/icons/Pfeil rechts Box.svg"></a>
-
-      </div>
-
-
-        
-      <div style="text-align:center;width: 100%;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
+    </div>
 
     </div>
 

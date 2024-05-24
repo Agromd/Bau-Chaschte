@@ -58,41 +58,19 @@ function vid_pause() {
 
 // gallery
 
-const images = document.querySelectorAll('.container img');
-images.forEach(image => {
-  image.addEventListener('click', function () {
-    const enlargedSrc = this.src.replace('thumbnail', 'large');
-    window.open(enlargedSrc, '_blank');
+function changeSlide(index) {
+  // Hide all slides
+  var slides = document.querySelectorAll('.slider img');
+  slides.forEach(function(slide) {
+    slide.style.display = "none";
   });
-});
 
+  // Show the selected slide
+  slides[index].style.display = "block";
 
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  // Update navigation dots
+  var dots = document.querySelectorAll('.navigation-button.dot');
+  dots.forEach(function(dot, i) {
+    dot.className = i === index? 'dot active' : 'dot';
+  });
 }

@@ -176,7 +176,7 @@ header img {
   color: var(--background-light);
 }
 
-.slider-container {
+.slider {
   max-width: 100%;
   position: relative;
   user-select: none;
