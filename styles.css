@@ -173,7 +173,19 @@ header img {
 
 /* Galerie Section */
 
+.slider {
+  max-width: 100%;
+  position: relative;
+  user-select: none;
+}
+
+.slides img {
+  width: 80vw;
+}
+
 .galary-section {
+  display: grid;
+  justify-items: center;
   width: 100%;
   background-color: var(--background-dark);
   text-align: center;
