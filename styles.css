@@ -65,6 +65,7 @@ header img {
   transition: 0.2s;
   padding-top: 60px;
   margin-top: 0;
+
 }
 
 .sidebar ul {
@@ -84,6 +85,7 @@ header img {
   text-align: left;
   display: block;
   text-decoration: none;
+  z-index: 2;
 }
 
 .close-btn {
@@ -189,6 +191,7 @@ header img {
   margin: auto;
   overflow: hidden;
   padding: 5%;
+
 }
 
 .slider img {
