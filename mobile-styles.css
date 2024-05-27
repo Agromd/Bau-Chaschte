@@ -1,0 +1,127 @@
+/* inter-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/mobile-assets/fonts/inter-v13-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/mobile-assets/fonts/inter-v13-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/mobile-assets/fonts/inter-v13-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/mobile-assets/fonts/inter-v13-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/mobile-assets/fonts/inter-v13-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #404040;
+}
+
+.wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+/* Header styles start */
+
+header {
+    position: fixed;
+    top: 38px;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-right: 15px;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_circle {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+/* header styles end */
+
+
+/* intro styles start */
+
+.intro{
+    height: 100vh;
+    background-color: #E8BE2B;
+    
+}
+
+/* intro styles end */

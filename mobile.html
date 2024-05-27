@@ -4,19 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Version</title>
-    <link rel="stylesheet" href="mobile-styles.css">
+    <title>BAU-CHASCHTE</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/mobile-styles.css">
 </head>
 
-<body style="background-color: red;">
-    <h1>Welcome to the Mobile Version of the Website</h1>
-    <p>This is the mobile version of the website.</p>
-</body>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo-link">
+                        <img src="/mobile-assets/svg/bauchaste_logo.svg" alt="logo" class="header_logo-pic">
+                    </a>
+                </div>
 
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#" class="header_link">
+                                <img src="/mobile-assets/svg/bauchaste_pin.svg" alt="" class="nav_pic map">
+                            </a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">
+                                <img src="/mobile-assets/svg/bauchaste_menu.svg" alt="" class="nav_pic menu">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro"></section>
+    </main>
+
+
+</body>
 <script>
-    if (window.innerWidth > 800) { // или любое другое значение для переключения
-        window.location.href = "screen.html";
+    if (window.innerWidth > 450) { // или любое другое значение для переключения
+        window.location.href = "index.html";
     }
 </script>
+<script src="/mobile-scripts.js"></script>
 
 </html>

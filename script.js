@@ -28,36 +28,9 @@ function toggleSidebar() {
   content.style.marginLeft = sidebar.style.width === '25%' ? '0' : '0';
 }
 
-// loader
-
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader")
-
-  loader.classList.add("loader--hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-
-// VIDEO PAUSE BUTTON
-
-// Get the video
-var video = document.getElementById("galary_vid");
-// Get the button
-var btn = document.getElementById("pause_btn");
-// Pause and play the video, and change the button text
-function vid_pause() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "PAUSE";
-  } else {
-    video.pause();
-    btn.innerHTML = "PLAY";
-  }
-}
-
 // gallery
 const slides = document.querySelectorAll(".slides img");
+
 let slideIndex = 0;
 let intervalId = null;
 
@@ -69,6 +42,8 @@ function initializeSlider() {
     intervalId = setInterval(nextSlide, 5000);
   }
 }
+
+
 
 function showSlide(index) {
   if (index >= slides.length) {

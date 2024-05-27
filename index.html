@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
     <title>BAU-CHASCHTE</title>
     <link rel="icon" href="/images/icons/lego-block-yellow.svg">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
 
 </head>
 
@@ -24,7 +24,7 @@
         <img type="svg" src="/images/logos/bau-chaschte-logo-for-light.svg">
 
         <!-- side bar menu  -->
-        <a class="open-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
+        <a class="open-btn" onclick="toggleSidebar()" onclick="hideSlider()"><iconify-icon icon="pixelarticons:menu"></iconify-icon></a>
         <div class="sidebar">
             <a class="close-btn" onclick="toggleSidebar()"><iconify-icon icon="pixelarticons:close"></iconify-icon></a>
             <!-- Your sidebar content goes here -->
@@ -157,7 +157,7 @@
         </div> -->
 
     <script>
-        if (window.innerWidth <= 800) { // или любое другое значение для переключения
+        if (window.innerWidth <= 450) { // или любое другое значение для переключения
             window.location.href = "mobile.html";
         }
     </script>
