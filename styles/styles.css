@@ -65,7 +65,6 @@ header img {
   transition: 0.2s;
   padding-top: 60px;
   margin-top: 0;
-  z-index: 2;
 }
 
 .sidebar ul {
@@ -182,6 +181,7 @@ header img {
   background-color: var(--background-dark);
   width: 100%;
   text-align: center;
+  z-index: -1;
 }
 
 .slider {
@@ -202,7 +202,7 @@ img.displaySlide {
   display: block;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
