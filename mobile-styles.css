@@ -82,6 +82,72 @@ img {
     margin: 0 auto;
 }
 
+.card {
+    width: 340px;
+    min-height: 423px;
+    border-radius: 35px;
+}
+
+/* button styles start */
+
+.button {
+    width: 340px;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+.button-dark {
+    background-color: #404040;
+}
+
+.button-light {
+    background-color: #DFDFDF;
+}
+
+.button-wrap {
+    display: flex;
+    padding: 7px 8px;
+}
+
+.rectangle_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 51px;
+    border-radius: 28px;
+}
+
+.rectangle_button_text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.rectangle_button_text_link {
+    text-decoration: none;
+}
+
+
+/* button styles end */
+
+.color_light {
+    color: #DFDFDF;
+}
+
+.color_dark {
+    color: #404040;
+}
+
+.background_light {
+    background-color: #DFDFDF;
+}
+
+.background_dark {
+    background-color: #404040;
+}
+
 /* Header styles start */
 
 header {
@@ -199,51 +265,6 @@ header {
     /* 21.76px */
 }
 
-
-/* button styles start */
-
-.button {
-    width: 340px;
-    margin: 0 auto;
-    background-color: #404040;
-    border-radius: 35px;
-}
-
-.button-wrap {
-    display: flex;
-    padding: 7px 8px;
-}
-
-.rectangle_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 162px;
-    height: 51px;
-    border-radius: 28px;
-}
-
-.rectangle_button_text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 136%;
-    /* 21.76px */
-}
-
-.rectangle_button_text_link {
-    color: #DFDFDF;
-    text-decoration: none;
-}
-
-.rectangle_button:last-child {
-    background-color: #DFDFDF;
-}
-
-.rectangle_button:last-child .rectangle_button_text_link {
-    color: #404040;
-}
-
-/* button styles end */
 /* about-us styles end */
 
 /* news styles start */
@@ -293,8 +314,6 @@ header {
 
 .news-card {
     background-color: #DFDFDF;
-    width: 340px;
-    min-height: 423px;
     border-radius: 0px 0px 35px 35px;
 }
 
@@ -380,3 +399,115 @@ header {
 /* news img styles end */
 
 /* news styles end */
+
+/* schulen und teamevents styles start */
+
+.schulen_teamevents {
+    background-color: #E8BE2B;
+    padding: 44px 0 35px;
+}
+
+.schulen_teamevents_title {
+    margin-bottom: 60px;
+}
+
+.schule_teamevents_title_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 77.866%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+.schulen_teamevents_subtitle {
+    margin: 0 auto 29px;
+    max-width: 312px;
+}
+
+.sculen_teamevents_subtitle_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%
+}
+
+.schulen_teamevents_cards {
+    margin: 29px auto 27px;
+    min-width: 340px;
+    min-height: 484px;
+}
+
+.schulen_teamevents_card {
+    background-color: #404040;
+}
+
+.schulen_teamevents_card_content {
+    max-width: 277px;
+    margin: 0 auto;
+    padding-top: 292px;
+}
+
+.schulen_teamevents_content_title {
+    margin-bottom: 20px;
+}
+
+.schulen_teamevents_content_title_text {
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.schulen_teamevents_content_subtitle {
+    margin-bottom: 27px;
+}
+
+.schulen_teamevents_content_subtitle_text {
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%;
+}
+
+.schulen_teamevents_content_dots {
+    max-width: 78px;
+    height: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.schulen_teamevents_content_dot {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid #DFDFDF;
+    background-color: #E8BE2B;
+}
+
+/* schulen und teamevents styles end */
+
+/* eintrittspreise styles start */
+
+.eintrittspreise {
+    background-color: #DFDFDF;
+    padding: 44px 0 57px;
+}
+
+.eintrittspreise_title {
+    margin-bottom: 28px;
+}
+
+.eintrittspreise_title_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 77.866%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+
+/* eintrittspreise styles end */
