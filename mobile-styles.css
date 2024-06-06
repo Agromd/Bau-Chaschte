@@ -148,6 +148,10 @@ img {
     background-color: #404040;
 }
 
+.background_red {
+    background: #FF8F88;
+}
+
 /* Header styles start */
 
 header {
@@ -509,5 +513,21 @@ header {
     text-transform: uppercase;
 }
 
+/* preiskarten styles start */
+
+.eintrittspreise_cards {
+    width: 340px;
+}
+
+.eintrittspreise_card {
+    min-height: 210px;
+}
+
+.eintrittspreise_subcard {
+    border-radius: 35px 35px 0px 0px;
+    min-height: 210px;
+}
+
+/* preiskarten stzles end */
 
 /* eintrittspreise styles end */
