@@ -152,6 +152,10 @@ img {
     background: #FF8F88;
 }
 
+.background_yellow {
+    background-color: #E8BE2B;
+}
+
 /* Header styles start */
 
 header {
@@ -520,14 +524,138 @@ header {
 }
 
 .eintrittspreise_card {
-    min-height: 210px;
+    min-height: 151px;
+    padding-bottom: 14px;
+}
+
+.eintrittspreise_card:nth-child(6) {
+    margin-bottom: 42px;
 }
 
 .eintrittspreise_subcard {
-    border-radius: 35px 35px 0px 0px;
-    min-height: 210px;
+    border-radius: 35px 35px 0 0;
+    padding-left: 30px;
 }
 
-/* preiskarten stzles end */
+.eintrittspreise_subcard:nth-child(2) {
+    border-radius: 0 0 35px 35px;
+}
+
+.full-rounded {
+    border-radius: 35px;
+}
+
+.eintrittspreise_subcard_title {
+    padding: 27px 0 5px 0;
+}
+
+.eintrittspreise_subcard_title_text {
+    color: #DFDFDF;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 77.866%;
+    /* 24.917px */
+    letter-spacing: -2.56px;
+}
+
+.eintrittspreise_subcard_subtitle {
+    padding: 0 0 32px 0;
+}
+
+.eintrittspreise_subcard_subtitle_text {
+    color: #DFDFDF;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 77.866%;
+    /* 12.459px */
+    letter-spacing: -1.28px;
+}
+
+.eintrittspreise_subcard_content {
+    width: 280px;
+    padding-bottom: 17px;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+.eintrittspreise_card:nth-child(2) .eintrittspreise_subcard_content,
+.eintrittspreise_card:nth-child(5) .eintrittspreise_subcard_content {
+    padding-bottom: 0;
+}
+
+.eintrittspreise_subcard_content_line_item_text {
+    color: #DFDFDF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+.little-yellow-card_wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.little-yellow-card {
+    width: inherit;
+    height: 29px;
+    border-radius: 18px 0px 0px 0px;
+    padding: 5px 6px 5px 7px;
+}
+
+.little-yellow-card_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+/* background red subcard styles start */
+
+.eintrittspreise_subcard_red_message {
+    padding: 17px 30px 17px 0;
+}
+
+.eintrittspreise_subcard_red_message_text {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 148%;
+    /* 28.12px */
+    letter-spacing: -1.71px;
+}
+
+/* background red subcard styles end */
+
+/* yellow card message styles start */
+
+.eintrittspreise_message_yellow {
+    padding: 20px 25px 21px 0;
+}
+
+.eintrittspreise_message_yellow_text {
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+/* yellow card message styles end */
+
+/* preiskarten styles end */
 
 /* eintrittspreise styles end */
+
+
+/* footer styles start */
+
+
+
+/* footer styles end */
