@@ -656,6 +656,47 @@ header {
 
 /* footer styles start */
 
+.footer {
+    background-color: #E8BE2B;
+}
 
+.small_content_wrapper {
+    padding-left: 14px;
+}
+
+.footer_title {
+    padding-top: 44px;
+    margin-bottom: 18px;
+}
+
+.footer_title_text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.footer_content_adress {
+    margin-bottom: 23px;
+}
+
+.footer_content_adress_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.footer_content_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
 
 /* footer styles end */
