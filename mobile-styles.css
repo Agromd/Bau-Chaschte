@@ -55,6 +55,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -83,7 +84,7 @@ img {
 }
 
 .card {
-    width: 340px;
+    max-width: 340px;
     min-height: 423px;
     border-radius: 35px;
 }
@@ -91,7 +92,7 @@ img {
 /* button styles start */
 
 .button {
-    width: 340px;
+    max-width: 340px;
     margin: 0 auto;
     border-radius: 35px;
 }
@@ -162,7 +163,8 @@ header {
     position: fixed;
     top: 38px;
     left: 0;
-    width: 100%;
+    min-width: 100%;
+    max-width: 340px;
 }
 
 .header_wrapper {
@@ -723,6 +725,15 @@ header {
     height: 176px;
     background-color: #404040;
     border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content_map_google {
+    width: 308px;
+    height: 161px;
+    border-radius: 28px;
 }
 
 .footer_content_euv {
@@ -797,4 +808,5 @@ header {
     letter-spacing: -1.6px;
     text-transform: lowercase;
 }
+
 /* footer styles end */
