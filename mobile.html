@@ -10,6 +10,21 @@
 </head>
 
 <body>
+    <script>
+        if (window.innerWidth > 450) { // или любое другое значение для переключения
+            window.location.href = "index.html";
+        }
+    </script>
+    <!-- button to the top start -->
+
+    <button onclick="topFunction()" id="top_btn">
+        <div class="img-wrapper">
+            <img src="/mobile-assets/svg/arrow-up.svg" alt="arrow up" class="pic_arrow-up">
+        </div>
+    </button>
+
+    <!-- button to the top end -->
+
     <!-- header start -->
     <header class="header">
         <div class="wrapper">
@@ -68,7 +83,7 @@
             </div>
             <div class="button button-dark">
                 <div class="button-wrap">
-                    <a href="#" class="rectangle_button_text_link color_light">
+                    <a href="/mobile_die-grundidee.html" class="rectangle_button_text_link color_light">
                         <div class="rectangle_button">
                             <p class="rectangle_button_text">Die
                                 Grundidee</p>
@@ -108,15 +123,16 @@
                             <!-- news card title end -->
 
                             <!-- news card subtitle start -->
-                            <div class="news-card_content_subtitle">
-                                <div class="news-card_subtitle_wrap">
-                                    <p class="news-card_subtitle_text">
-                                        <a href="#" class="news-card_subtitle_link">Zu den
-                                            Öffnungszeiten
-                                        </a>
-                                    </p>
+                            <a href="/mobile_öffnungszeiten.html" class="news-card_subtitle_link">
+                                <div class="news-card_content_subtitle">
+                                    <div class="news-card_subtitle_wrap">
+                                        <p class="news-card_subtitle_text">
+                                            Zu den Öffnungszeiten
+
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                             <!-- news card subtitle end -->
 
                             <!-- news card dots start -->
@@ -182,7 +198,7 @@
                 <!-- schulen und teamevents start -->
 
                 <div class="button button-light">
-                    <a href="#" class="rectangle_button_text_link color_dark">
+                    <a href="/mobile_öffnungszeiten.html" class="rectangle_button_text_link color_dark">
                         <div class="button-wrap">
                             <div class="rectangle_button">
                                 <p class="rectangle_button_text">Öffnungszeiten</p>
@@ -326,7 +342,7 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">jedes weitere Kind
+                                            <p class="eintrittspreise_subcard_content_line_item_text">jedes weitere Kind <br> (max. 2)
                                             </p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
@@ -399,7 +415,7 @@
                     <div class="eintrittspreise_card">
                         <div class="eintrittspreise_subcard background_dark">
                             <div class="eintrittspreise_subcard_title">
-                                <p class="eintrittspreise_subcard_title_text">Gruppentarif (ab 10 Pers.) während
+                                <p class="eintrittspreise_subcard_title_text">Gruppentarif <br> (ab 10 Pers.) während
                                     Öffnungszeiten
                                 </p>
                             </div>
@@ -424,8 +440,7 @@
                                 <tr class="eintrittspreise_subcard_content_line">
                                     <td class="eintrittspreise_subcard_content_line_item">
                                         <p class="eintrittspreise_subcard_content_line_item_text">Erwachsen (ab
-                                            16
-                                            J.)
+                                            16 J.)
                                         </p>
                                     </td>
                                     <td class="eintrittspreise_subcard_content_line_item">
@@ -451,8 +466,7 @@
                     <div class="eintrittspreise_card">
                         <div class="eintrittspreise_subcard background_dark full-rounded">
                             <div class="eintrittspreise_subcard_title">
-                                <p class="eintrittspreise_subcard_title_text">10-er-Karte
-                                    (9 Eintritte bezahlen)
+                                <p class="eintrittspreise_subcard_title_text">10-er-Karte <br> (9 Eintritte bezahlen)
                                 </p>
                             </div>
                             <div class="eintrittspreise_subcard_subtitle">
@@ -514,7 +528,7 @@
 
                     <div class="button button-dark">
                         <div class="button-wrap">
-                            <a href="#" class="rectangle_button_text_link color_light">
+                            <a href="/mobile_öffnungszeiten.html" class="rectangle_button_text_link color_light">
                                 <div class="rectangle_button">
                                     <p class="rectangle_button_text">Öffnungszeiten</p>
                                     <div class="icon"><img src="/mobile-assets/svg/arrow-up-right.svg" alt="arrow"
@@ -613,7 +627,7 @@
                         <a href="http://www.youtube.com/@BAU-CHASCHTE" class="footer_link_text">YouTube</a>
                     </div>
                     <div class="footer_link drei">
-                        <a href="#" class="footer_link_text">Instagramm</a>
+                        <a href="https://www.instagram.com/bau_chaschte/" class="footer_link_text">Instagram</a>
                     </div>
                 </div>
 
@@ -630,11 +644,7 @@
     <!-- main end -->
 
 </body>
-<script>
-    if (window.innerWidth > 450) { // или любое другое значение для переключения
-        window.location.href = "index.html";
-    }
-</script>
+
 <script src="/mobile-scripts.js"></script>
 
 </html>

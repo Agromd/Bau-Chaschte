@@ -53,6 +53,20 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* animations start */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* animation end */
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -156,6 +170,34 @@ img {
 .background_yellow {
     background-color: #E8BE2B;
 }
+
+/* button to the top styles start */
+
+#top_btn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #404040;
+    color: #DFDFDF;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    animation: slideUp 2s forwards;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* button to the top styles end */
 
 /* Header styles start */
 
@@ -810,3 +852,145 @@ header {
 }
 
 /* footer styles end */
+
+/* öffnungszeiten styles start */
+
+.oeffnungszeiten {
+    background-color: #DFDFDF;
+    padding-bottom: 35px;
+}
+
+.closed {
+    opacity: 0.6;
+}
+
+.oeffnungszeiten_title {
+    max-width: 366px;
+    padding-top: 146px;
+    margin: 0 auto;
+}
+
+.oeffnungszeiten_title_text {
+    font-size: 73px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77.866%;
+    /* 56.842px */
+    letter-spacing: -5.84px;
+    text-transform: uppercase;
+}
+
+.small_oeffnungszeiten_wrapper {
+    padding: 0 14px;
+}
+
+.oeffnungszeiten_regular_title {
+    padding: 45px 0 26px;
+    max-width: 229px;
+}
+
+.oeffnungszeiten_regular_title_text {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    /* 32px */
+}
+
+.oeffnungszeiten_grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    row-gap: 14px;
+    justify-content: space-around;
+    margin-bottom: 26px;
+}
+
+.dateNtime_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.oeffnungszeiten_termin_container {
+    max-width: 340px;
+    height: auto;
+    background-color: #E8BE2B;
+    border-radius: 35px;
+}
+
+.oeffnungszeiten_termin_title {
+    padding-top: 36px;
+    width: 136px;
+    margin: 0 auto 46px auto;
+}
+
+.oeffnungszeiten_termin_title_text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+.oeffnungszeiten_terminlist_container {
+    padding: 0 14px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 14px 0px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+}
+
+.oeffnungszeiten_terminlist_container .dateNtime:last-child {
+    padding-bottom: 36px;
+}
+
+/* öffnungszeiten styles end */
+
+/* die grundidee styles start */
+
+.grundidee {
+    background-color: #DFDFDF;
+    background-image: url(/mobile-assets/images/Die\ Grundidee\ background\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grundidee_title {
+    padding-top: 153px;
+    margin-bottom: 24px;
+}
+
+.grundidee_title_line {
+    display: grid;
+    justify-content: center;
+}
+
+.grundidee_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grundidee_content_text {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.grundidee_content {
+    margin-bottom: 40px;
+    max-width: 250px;
+}
+
+/* die grundidee styles end */
