@@ -991,6 +991,7 @@ header {
 .grundidee_content {
     margin-bottom: 40px;
     max-width: 250px;
+    text-align: justify;
 }
 
 /* die grundidee styles end */
