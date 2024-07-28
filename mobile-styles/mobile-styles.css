@@ -1,0 +1,997 @@
+/* inter-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/mobile-assets/fonts/inter-v13-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/mobile-assets/fonts/inter-v13-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/mobile-assets/fonts/inter-v13-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/mobile-assets/fonts/inter-v13-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/mobile-assets/fonts/inter-v13-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* animations start */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* animation end */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #404040;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 340px;
+    min-height: 423px;
+    border-radius: 35px;
+}
+
+/* button styles start */
+
+.button {
+    max-width: 340px;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+.button-dark {
+    background-color: #404040;
+}
+
+.button-light {
+    background-color: #DFDFDF;
+}
+
+.button-wrap {
+    display: flex;
+    padding: 7px 8px;
+}
+
+.rectangle_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 51px;
+    border-radius: 28px;
+}
+
+.rectangle_button_text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.rectangle_button_text_link {
+    text-decoration: none;
+}
+
+
+/* button styles end */
+
+.color_light {
+    color: #DFDFDF;
+}
+
+.color_dark {
+    color: #404040;
+}
+
+.background_light {
+    background-color: #DFDFDF;
+}
+
+.background_dark {
+    background-color: #404040;
+}
+
+.background_red {
+    background: #FF8F88;
+}
+
+.background_yellow {
+    background-color: #E8BE2B;
+}
+
+/* button to the top styles start */
+
+#top_btn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #404040;
+    color: #DFDFDF;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    animation: slideUp 2s forwards;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* button to the top styles end */
+
+/* Header styles start */
+
+header {
+    position: fixed;
+    top: 38px;
+    left: 0;
+    min-width: 100%;
+    max-width: 340px;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item {
+    margin-right: 15px;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.nav_pic {
+    display: block;
+}
+
+/* header styles end */
+
+
+/* intro styles start */
+
+.intro {
+    min-height: 100vh;
+    background-color: #E8BE2B;
+    padding-top: 66.6vh;
+}
+
+.intro_title {
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 77.866%;
+    /* 52.17px */
+    letter-spacing: -5.36px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro_title:nth-child(2) {
+    margin-bottom: 43px;
+}
+
+.intro_subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 17.131px */
+    letter-spacing: -1.76px;
+    text-transform: uppercase;
+}
+
+.subtitle_list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 23px;
+}
+
+/* intro styles end */
+
+/* about-us styles start */
+
+.about-us {
+    background-color: #DFDFDF;
+    padding-bottom: 36px;
+}
+
+.content_img {
+    width: 100vw;
+    height: 55vh;
+    flex-shrink: 0;
+    border-radius: 0px 0px 35px 35px;
+    background: url(/mobile-assets/images/img1.jpg) 40% / auto 100% no-repeat;
+    margin-bottom: 4.8vh;
+}
+
+.about-us_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    padding: 25px;
+    margin-bottom: 91px;
+}
+
+.about-us_card {
+    grid-column: span 1;
+}
+
+.about-us_title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.about-us_desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+/* about-us styles end */
+
+/* news styles start */
+
+.news {
+    background-color: #404040;
+    padding-bottom: 35px;
+}
+
+.news-cards {
+    padding-top: 44px;
+    min-width: 340px;
+    min-height: 484px;
+    margin-bottom: 12px;
+}
+
+/* news title styles start */
+
+.news-title {
+    background-color: #DFDFDF;
+    width: 340px;
+    height: 61px;
+    border-radius: 35px 35px 0px 0px;
+    padding-top: 20px;
+}
+
+.news-title_wrap {
+    background-color: #404040;
+    width: 132px;
+    height: 41px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.news-title_text {
+    color: #DFDFDF;
+    text-align: center;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    /* 15.573px */
+    letter-spacing: -1.6px;
+}
+
+/* news title styles end */
+
+.news-card {
+    background-color: #DFDFDF;
+    border-radius: 0px 0px 35px 35px;
+}
+
+.news-card_content {
+    padding-top: 253px;
+    max-width: 274px;
+    margin: 0 auto;
+}
+
+/* news card title styles start */
+.news-card_content_title {
+    max-width: 228px;
+    margin: 0 auto 15px;
+}
+
+.news-card_title_text {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* news card title styles end */
+
+/* news card subtitle styles start */
+
+.news-card_content_subtitle {
+    max-width: 274px;
+    min-height: 36px;
+    margin: 0 auto 25px;
+}
+
+.news-card_subtitle_wrap {
+    padding: 7px 20px;
+    border-radius: 30px;
+    border: 0.7px solid var(--Background---dark, #404040);
+}
+
+.news-card_subtitle_text {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 136%;
+}
+
+.news-card_subtitle_link {
+    color: #404040;
+    text-decoration: none;
+}
+
+/* news card subtitle styles end */
+
+/* news card dots styles start */
+
+.news-card_content_dots {
+    max-width: 78px;
+    height: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.news-card_dot {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid #404040;
+    background-color: #E8BE2B;
+}
+
+/* news card dots styles end */
+
+/* news img styles start */
+
+.content_img_news {
+    width: 340px;
+    height: 269px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: url(/mobile-assets/images/img6.jpg) lightgray -0.06px 0px / 140.546% 100% no-repeat;
+}
+
+/* news img styles end */
+
+/* news styles end */
+
+/* schulen und teamevents styles start */
+
+.schulen_teamevents {
+    background-color: #E8BE2B;
+    padding: 44px 0 35px;
+}
+
+.schulen_teamevents_title {
+    margin-bottom: 60px;
+}
+
+.schule_teamevents_title_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 77.866%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+.schulen_teamevents_subtitle {
+    margin: 0 auto 29px;
+    max-width: 312px;
+}
+
+.sculen_teamevents_subtitle_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%
+}
+
+.schulen_teamevents_cards {
+    margin: 29px auto 27px;
+    min-width: 340px;
+    min-height: 484px;
+}
+
+.schulen_teamevents_card {
+    background-color: #404040;
+}
+
+.schulen_teamevents_card_content {
+    max-width: 277px;
+    margin: 0 auto;
+    padding-top: 292px;
+}
+
+.schulen_teamevents_content_title {
+    margin-bottom: 20px;
+}
+
+.schulen_teamevents_content_title_text {
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.schulen_teamevents_content_subtitle {
+    margin-bottom: 27px;
+}
+
+.schulen_teamevents_content_subtitle_text {
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%;
+}
+
+.schulen_teamevents_content_dots {
+    max-width: 78px;
+    height: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.schulen_teamevents_content_dot {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid #DFDFDF;
+    background-color: #E8BE2B;
+}
+
+/* schulen und teamevents styles end */
+
+/* eintrittspreise styles start */
+
+.eintrittspreise {
+    background-color: #DFDFDF;
+    padding: 44px 0 57px;
+}
+
+.eintrittspreise_title {
+    margin-bottom: 28px;
+}
+
+.eintrittspreise_title_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 77.866%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+/* preiskarten styles start */
+
+.eintrittspreise_cards {
+    width: 340px;
+}
+
+.eintrittspreise_card {
+    min-height: 151px;
+    padding-bottom: 14px;
+}
+
+.eintrittspreise_card:nth-child(6) {
+    margin-bottom: 42px;
+}
+
+.eintrittspreise_subcard {
+    border-radius: 35px 35px 0 0;
+    padding-left: 30px;
+}
+
+.eintrittspreise_subcard:nth-child(2) {
+    border-radius: 0 0 35px 35px;
+}
+
+.full-rounded {
+    border-radius: 35px;
+}
+
+.eintrittspreise_subcard_title {
+    padding: 27px 0 5px 0;
+}
+
+.eintrittspreise_subcard_title_text {
+    color: #DFDFDF;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 77.866%;
+    /* 24.917px */
+    letter-spacing: -2.56px;
+}
+
+.eintrittspreise_subcard_subtitle {
+    padding: 0 0 32px 0;
+}
+
+.eintrittspreise_subcard_subtitle_text {
+    color: #DFDFDF;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 77.866%;
+    /* 12.459px */
+    letter-spacing: -1.28px;
+}
+
+.eintrittspreise_subcard_content {
+    width: 280px;
+    padding-bottom: 17px;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+.eintrittspreise_card:nth-child(2) .eintrittspreise_subcard_content,
+.eintrittspreise_card:nth-child(5) .eintrittspreise_subcard_content {
+    padding-bottom: 0;
+}
+
+.eintrittspreise_subcard_content_line_item_text {
+    color: #DFDFDF;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+.little-yellow-card_wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.little-yellow-card {
+    width: inherit;
+    height: 29px;
+    border-radius: 18px 0px 0px 0px;
+    padding: 5px 6px 5px 7px;
+}
+
+.little-yellow-card_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+/* background red subcard styles start */
+
+.eintrittspreise_subcard_red_message {
+    padding: 17px 30px 17px 0;
+}
+
+.eintrittspreise_subcard_red_message_text {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 148%;
+    /* 28.12px */
+    letter-spacing: -1.71px;
+}
+
+/* background red subcard styles end */
+
+/* yellow card message styles start */
+
+.eintrittspreise_message_yellow {
+    padding: 20px 25px 21px 0;
+}
+
+.eintrittspreise_message_yellow_text {
+    color: #404040;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+    letter-spacing: -1.12px;
+}
+
+/* yellow card message styles end */
+
+/* preiskarten styles end */
+
+/* eintrittspreise styles end */
+
+
+/* footer styles start */
+
+.footer {
+    background-color: #E8BE2B;
+}
+
+.small_footer_wrapper {
+    padding-left: 14px;
+}
+
+.footer_title {
+    margin-bottom: 18px;
+}
+
+.footer_title:first-child {
+    padding-top: 44px;
+}
+
+.footer_title_text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.footer_content {
+    margin-bottom: 33px;
+}
+
+.footer_content:last-child {
+    margin-bottom: 84px;
+}
+
+.footer_content_adress {
+    margin-bottom: 23px;
+}
+
+.footer_content_adress_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.footer_content_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.e-mail_link {
+    color: #404040;
+}
+
+.footer_content_map {
+    width: 100%;
+    height: 176px;
+    background-color: #404040;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content_map_google {
+    width: 308px;
+    height: 161px;
+    border-radius: 28px;
+}
+
+.footer_content_euv {
+    display: grid;
+    row-gap: 9px;
+}
+
+.footer_content_euv_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.footer_content_parken_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.footer_links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    height: 71px;
+    margin-bottom: 70px;
+}
+
+.eins {
+    justify-self: center;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.zwei {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: left;
+}
+
+.drei {
+    grid-area: 2 / 3 / 3 / 4;
+    justify-self: right;
+}
+
+.footer_link_text {
+    color: #404040;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -1.92px;
+    text-transform: lowercase;
+}
+
+.footer_rights {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 21px;
+}
+
+.footer_rights_text {
+    color: #404040;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 15.573px */
+    letter-spacing: -1.6px;
+    text-transform: lowercase;
+}
+
+/* footer styles end */
+
+/* öffnungszeiten styles start */
+
+.oeffnungszeiten {
+    background-color: #DFDFDF;
+    padding-bottom: 35px;
+}
+
+.closed {
+    opacity: 0.6;
+}
+
+.oeffnungszeiten_title {
+    max-width: 366px;
+    padding-top: 146px;
+    margin: 0 auto;
+}
+
+.oeffnungszeiten_title_text {
+    font-size: 73px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 77.866%;
+    /* 56.842px */
+    letter-spacing: -5.84px;
+    text-transform: uppercase;
+}
+
+.small_oeffnungszeiten_wrapper {
+    padding: 0 14px;
+}
+
+.oeffnungszeiten_regular_title {
+    padding: 45px 0 26px;
+    max-width: 229px;
+}
+
+.oeffnungszeiten_regular_title_text {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    /* 32px */
+}
+
+.oeffnungszeiten_grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    row-gap: 14px;
+    justify-content: space-around;
+    margin-bottom: 26px;
+}
+
+.dateNtime_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.oeffnungszeiten_termin_container {
+    max-width: 340px;
+    height: auto;
+    background-color: #E8BE2B;
+    border-radius: 35px;
+}
+
+.oeffnungszeiten_termin_title {
+    padding-top: 36px;
+    width: 136px;
+    margin: 0 auto 46px auto;
+}
+
+.oeffnungszeiten_termin_title_text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 77.866%;
+    /* 18.688px */
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+.oeffnungszeiten_terminlist_container {
+    padding: 0 14px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 14px 0px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+}
+
+.oeffnungszeiten_terminlist_container .dateNtime:last-child {
+    padding-bottom: 36px;
+}
+
+/* öffnungszeiten styles end */
+
+/* die grundidee styles start */
+
+.grundidee {
+    background-color: #DFDFDF;
+    background-image: url(/mobile-assets/images/Die\ Grundidee\ background\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grundidee_title {
+    padding-top: 153px;
+    margin-bottom: 24px;
+}
+
+.grundidee_title_line {
+    display: grid;
+    justify-content: center;
+}
+
+.grundidee_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grundidee_content_text {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    /* 21.76px */
+}
+
+.grundidee_content {
+    margin-bottom: 40px;
+    max-width: 250px;
+    text-align: justify;
+}
+
+/* die grundidee styles end */
