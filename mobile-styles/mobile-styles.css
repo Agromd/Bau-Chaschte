@@ -53,6 +53,15 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* haettenschweiler */
+@font-face {
+    font-display: auto;
+    font-family: 'haettenschweiler';
+    font-style: normal;
+    font-weight: auto;
+    src: url('/mobile-assets/fonts/Haettenschweiler.woff2') format('woff2');
+}
+
 /* animations start */
 
 @keyframes slideUp {
@@ -99,8 +108,12 @@ img {
 
 .card {
     max-width: 340px;
-    min-height: 423px;
+    min-height: 477px;
     border-radius: 35px;
+}
+
+.bold_text {
+    font-weight: 600;
 }
 
 /* button styles start */
@@ -121,6 +134,7 @@ img {
 
 .button-wrap {
     display: flex;
+    justify-content: space-evenly;
     padding: 7px 8px;
 }
 
@@ -180,7 +194,7 @@ img {
     position: fixed;
     bottom: 40px;
     right: 30px;
-    z-index: 99;
+    z-index: 2;
     border: none;
     outline: none;
     background-color: #404040;
@@ -199,14 +213,74 @@ img {
 
 /* button to the top styles end */
 
+/* loader styles start */
+
+.loader-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: .5s;
+}
+
+.loader {
+    width: 85px;
+    height: 50px;
+    --g1: conic-gradient(from 90deg at left 3px top 3px, #0000 90deg, #DFDFDF 0);
+    --g2: conic-gradient(from -90deg at bottom 3px right 3px, #0000 90deg, #DFDFDF 0);
+    background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+    background-position: left, center, right;
+    background-repeat: no-repeat;
+    animation: l9 1s infinite;
+}
+
+@keyframes l9 {
+    0% {
+        background-size: 25px 50%, 25px 50%, 25px 50%
+    }
+
+    25% {
+        background-size: 25px 100%, 25px 50%, 25px 50%
+    }
+
+    50% {
+        background-size: 25px 50%, 25px 100%, 25px 50%
+    }
+
+    75% {
+        background-size: 25px 50%, 25px 50%, 25px 100%
+    }
+
+    100% {
+        background-size: 25px 50%, 25px 50%, 25px 50%
+    }
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* loader styles end */
+
 /* Header styles start */
 
 header {
     position: fixed;
-    top: 38px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     left: 0;
     min-width: 100%;
     max-width: 340px;
+    z-index: 2;
+    background-color: #E8BE2B;
+    transition: .5s;
 }
 
 .header_wrapper {
@@ -233,6 +307,82 @@ header {
     display: block;
 }
 
+.off-screen-menu {
+    background-color: #404040;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.off-screen-menu_ul_li {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.off-screen-menu_ul_li a {
+    text-decoration: none;
+    color: #DFDFDF;
+}
+
+.off-screen-menu_ul_li:last-child {
+    margin-bottom: 0;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+.header_hamb-menu {
+    width: 40px;
+    height: 40px;
+    background-color: #DFDFDF;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header_hamb-menu span {
+    width: 15px;
+    height: 2px;
+    background-color: #404040;
+    border-radius: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.header_hamb-menu span:nth-child(1) {
+    top: 35%;
+}
+
+.header_hamb-menu span:nth-child(3) {
+    top: 65%;
+}
+
+.header_hamb-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header_hamb-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.header_hamb-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* header styles end */
 
 
@@ -245,11 +395,12 @@ header {
 }
 
 .intro_title {
+    font-family: 'haettenschweiler';
     font-size: 67px;
     font-weight: 600;
     line-height: 77.866%;
     /* 52.17px */
-    letter-spacing: -5.36px;
+    letter-spacing: 16px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -368,6 +519,35 @@ header {
 
 /* news title styles end */
 
+/* swiper styles start */
+
+.swiper {
+    height: 100%;
+}
+
+/* swiper styles end */
+
+/* swiper pagination bullet styles start */
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    border: 1px solid #404040;
+    background: #E8BE2B;
+    transition: .2s;
+}
+
+.light-pagination>.swiper-pagination-bullet {
+    border: 1px solid #DFDFDF;
+}
+
+.swiper-pagination-bullet-active {
+    width: 39px;
+}
+
+/* swiper pagination bullet styles end */
+
 .news-card {
     background-color: #DFDFDF;
     border-radius: 0px 0px 35px 35px;
@@ -381,7 +561,8 @@ header {
 
 /* news card title styles start */
 .news-card_content_title {
-    max-width: 228px;
+    padding-top: 55%;
+    max-width: 237px;
     margin: 0 auto 15px;
 }
 
@@ -398,8 +579,11 @@ header {
 
 .news-card_content_subtitle {
     max-width: 274px;
-    min-height: 36px;
+    min-height: 170px;
     margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .news-card_subtitle_wrap {
@@ -422,25 +606,6 @@ header {
 }
 
 /* news card subtitle styles end */
-
-/* news card dots styles start */
-
-.news-card_content_dots {
-    max-width: 78px;
-    height: 10px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-.news-card_dot {
-    width: 100%;
-    height: 10px;
-    border-radius: 15px;
-    border: 1px solid #404040;
-    background-color: #E8BE2B;
-}
-
-/* news card dots styles end */
 
 /* news img styles start */
 
@@ -488,11 +653,13 @@ header {
     line-height: 136%
 }
 
-.schulen_teamevents_cards {
-    margin: 29px auto 27px;
-    min-width: 340px;
-    min-height: 484px;
+/* swiper-teamevents styles start */
+
+.swiper-schulen_teamevents {
+    margin-bottom: 27px;
 }
+
+/* swiper-teamevents styles end */
 
 .schulen_teamevents_card {
     background-color: #404040;
@@ -517,7 +684,7 @@ header {
 }
 
 .schulen_teamevents_content_subtitle {
-    margin-bottom: 27px;
+    padding-bottom: 27px;
 }
 
 .schulen_teamevents_content_subtitle_text {
@@ -526,13 +693,6 @@ header {
     font-size: 16px;
     font-weight: 300;
     line-height: 136%;
-}
-
-.schulen_teamevents_content_dots {
-    max-width: 78px;
-    height: 10px;
-    margin: 0 auto;
-    padding-bottom: 20px;
 }
 
 .schulen_teamevents_content_dot {
@@ -601,7 +761,7 @@ header {
     color: #DFDFDF;
     font-size: 32px;
     font-weight: 200;
-    line-height: 77.866%;
+    line-height: 120%;
     /* 24.917px */
     letter-spacing: -2.56px;
 }
@@ -735,7 +895,7 @@ header {
 }
 
 .footer_content:last-child {
-    margin-bottom: 84px;
+    margin-bottom: 70px;
 }
 
 .footer_content_adress {
@@ -800,38 +960,24 @@ header {
 }
 
 .footer_links {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    height: 71px;
-    margin-bottom: 70px;
+    display: flex;
+    width: 340px;
+    padding: 0px 14px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 49px;
 }
 
 .eins {
-    justify-self: center;
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .zwei {
-    grid-area: 2 / 1 / 3 / 2;
-    justify-self: left;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .drei {
-    grid-area: 2 / 3 / 3 / 4;
-    justify-self: right;
-}
-
-.footer_link_text {
-    color: #404040;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 77.866%;
-    /* 18.688px */
-    letter-spacing: -1.92px;
-    text-transform: lowercase;
+    grid-area: 1 / 3 / 2 / 4;
 }
 
 .footer_rights {
@@ -995,3 +1141,115 @@ header {
 }
 
 /* die grundidee styles end */
+
+/* gutscheine styles start */
+
+.gutscheine {
+    background-color: #DFDFDF;
+    padding-bottom: 90px;
+}
+
+.gutscheine_title {
+    margin-bottom: 65px;
+}
+
+.gutschein_swiper {
+    margin-bottom: 86px;
+}
+
+.swiper_image_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.swiper_image {
+    flex-shrink: 0;
+}
+
+.s-button-prev {
+    content: url('/mobile-assets/svg/button-prev.svg');
+}
+
+.s-button-next {
+    content: url('/mobile-assets/svg/button-next.svg');
+}
+
+.s-button-prev,
+.s-button-next {
+    z-index: 10;
+}
+
+.swiper-buttons {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: 100%;
+    height: var(--swiper-navigation-size);
+    margin-top: -40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper_image_subtext_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 32px;
+    border-radius: 35px;
+}
+
+.swiper_image_subtext {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 136%;
+    color: #DFDFDF;
+    padding: 0 20px 0 20px;
+}
+
+.subtext_line {
+    width: 38px;
+    height: 1px;
+    background-color: #DFDFDF;
+}
+
+.gutschein_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_description_wrap {
+    width: 340px;
+    margin-top: 20px;
+    margin-bottom: 86px;
+    text-align: justify;
+}
+
+.image_description_wrap:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.swiper_image_subtext_wrap:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.swiper_image_subtext_wrap:nth-child(5) {
+    padding: 28px;
+    margin-bottom: 92px;
+}
+
+.gutschein_rectangle_small {
+    width: 129px;
+}
+
+.gutschein_rectangle_large {
+    width: 195px;
+}
+
+/* gutscheine styles end */

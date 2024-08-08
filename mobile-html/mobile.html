@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAU-CHASCHTE</title>
     <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/mobile-styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="/mobile-styles/mobile-styles.css">
 </head>
 
@@ -14,15 +15,33 @@
         if (window.innerWidth > 450) { // или любое другое значение для переключения
             window.location.href = "/html/index.html";
         }
-    </script>
-    <!-- button to the top start -->
 
+        //loader js start
+
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader-wrapper")
+            loader.classList.add("loader--hidden")
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader)
+            });
+        });
+
+        //loader js end
+    </script>
+
+    <!-- loader html start -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!-- loader html end -->
+
+    <!-- button to the top start -->
     <button onclick="topFunction()" id="top_btn">
         <div class="img-wrapper">
             <img src="/mobile-assets/svg/arrow-up.svg" alt="arrow up" class="pic_arrow-up">
         </div>
     </button>
-
     <!-- button to the top end -->
 
     <!-- header start -->
@@ -30,7 +49,7 @@
         <div class="wrapper">
             <div class="header_wrapper">
                 <div class="header_logo">
-                    <a href="/mobile-html/" class="header_logo-link">
+                    <a href="#Home" class="header_logo-link">
                         <img src="/mobile-assets/svg/bauchaste_logo.svg" alt="logo" class="header_logo-pic">
                     </a>
                 </div>
@@ -42,10 +61,30 @@
                                 <img src="/mobile-assets/svg/bauchaste_pin.svg" alt="" class="nav_pic map">
                             </a>
                         </li>
+                        <div class="off-screen-menu">
+                            <ul class="off-screen-menu_ul">
+                                <li class="off-screen-menu_ul_li"><a href="#Home">Home</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="#WasIstDerBauChaschte">Was ist
+                                        der<br>Bau-chaschte?</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="#Neuigkeiten">Neuigkeiten</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="#SchulenUndTeamevents">Schulen
+                                        und<br>Teamevents</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="#Eintrittspreise">Eintrittpreise</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="/mobile-html/mobile_die-grundidee.html">Die
+                                        Grundidee</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="/mobile-html/mobile_gutscheine.html">Das
+                                        perfekte Geschenk</a></li>
+                                <li class="off-screen-menu_ul_li"><a
+                                        href="/mobile-html/mobile_oeffnungszeiten.html">Öffnungszeiten</a></li>
+                                <li class="off-screen-menu_ul_li"><a href="#Kontakt">Kontakt</a></li>
+                            </ul>
+                        </div>
                         <li class="header_item">
-                            <a href="#" class="header_link">
-                                <img src="/mobile-assets/svg/bauchaste_menu.svg" alt="" class="nav_pic menu">
-                            </a>
+                            <div class="header_hamb-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -54,7 +93,7 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main class="main">
+    <main class="main" id="Home">
         <!-- intro start -->
         <section class="intro">
             <div class="wrapper">
@@ -68,7 +107,7 @@
         </section>
         <!-- intro end -->
         <!-- about-us start -->
-        <section class="about-us">
+        <section class="about-us" id="WasIstDerBauChaschte">
             <div class="content_img"></div>
             <h2 class="about-us_title">Was ist der Bau-chaschte?</h2>
             <div class="about-us_cards">
@@ -92,9 +131,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="rectangle_button_text_link color_dark">
+                    <a href="#Neuigkeiten" class="rectangle_button_text_link color_dark">
                         <div class="rectangle_button background_light">
-                            <p class="rectangle_button_text">Galerie
+                            <p class="rectangle_button_text">Neuigkeiten
                             </p>
                             <div class="icon"><img src="/mobile-assets/svg/arrow-up-right_dark.svg" alt="arrow"
                                     class="nav_pic"></div>
@@ -105,7 +144,7 @@
         </section>
         <!-- about us end -->
         <!-- news start-->
-        <section class="news">
+        <section class="news" id="Neuigkeiten">
             <div class="wrapper">
                 <div class="news-cards">
                     <div class="news-title">
@@ -113,36 +152,68 @@
                             <p class="news-title_text">Neuigkeiten</p>
                         </div>
                     </div>
-                    <div class="news-card card">
-                        <div class="news-card_content">
-                            <!-- news card title start -->
-                            <div class="news-card_content_title">
-                                <p class="news-card_title_text">Im Juni haben wir Jeweils Mi. Fr. Sa. und So.
-                                    geöffnet.</p>
-                            </div>
-                            <!-- news card title end -->
-
-                            <!-- news card subtitle start -->
-                            <a href="/mobile-html/mobile_öffnungszeiten.html" class="news-card_subtitle_link">
-                                <div class="news-card_content_subtitle">
-                                    <div class="news-card_subtitle_wrap">
-                                        <p class="news-card_subtitle_text">
-                                            Zu den Öffnungszeiten
-
-                                        </p>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="news-card card">
+                                    <!-- news card title start -->
+                                    <div class="news-card_content_title">
+                                        <p class="news-card_title_text">Bald wieder los!</p>
                                     </div>
+                                    <!-- news card title end -->
+
+                                    <!-- news card subtitle start -->
+
+                                    <div class="news-card_content_subtitle">
+                                        <p class="news-card_subtitle_text">
+                                            Ab dem 9. August ist Bau-Chaschte wieder für alle geöffnet. Seid bereit für
+                                            neuen Bauspass!
+                                        </p>
+                                        <a href="/mobile-html/mobile_oeffnungszeiten.html"
+                                            class="news-card_subtitle_link">
+                                            <div class="news-card_subtitle_wrap">
+                                                <p class="news-card_subtitle_text">
+                                                    Zu den Öffnungszeiten
+
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- news card subtitle end -->
                                 </div>
-                            </a>
-                            <!-- news card subtitle end -->
-
-                            <!-- news card dots start -->
-
-                            <div class="news-card_content_dots">
-                                <div class="news-card_dot"></div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="news-card card">
+                                    <!-- news card title start -->
+                                    <div class="news-card_content_title">
+                                        <p class="news-card_title_text">Das perfekte Geschenk!</p>
+                                    </div>
+                                    <!-- news card title end -->
 
-                            <!-- news card dots end -->
+                                    <!-- news card subtitle start -->
+                                    <div class="news-card_content_subtitle">
+                                        <p class="news-card_subtitle_text">
+                                            Überrasche deine Liebsten mit einem Gutschein von Bau-Chaschte.
+                                        </p>
+                                        <a href="/mobile-html/mobile_gutscheine.html" class="news-card_subtitle_link">
+                                            <div class="news-card_subtitle_wrap">
+                                                <p class="news-card_subtitle_text">
+                                                    Gutscheine entdecken
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- news card subtitle end -->
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <!-- news cards end -->
@@ -159,7 +230,7 @@
 
         <!-- schulen und teamevents start -->
 
-        <section class="schulen_teamevents">
+        <section class="schulen_teamevents" id="SchulenUndTeamevents">
             <div class="wrapper">
                 <!-- schulen und teamevents title start -->
                 <div class="schulen_teamevents_title">
@@ -175,26 +246,49 @@
                 </div>
                 <!-- schulen und teamevents subtitle end -->
 
-                <!-- schulen und teamevents cards start -->
-                <div class="schulen_teamevents_cards">
-                    <div class="schulen_teamevents_card card">
-                        <div class="schulen_teamevents_card_content">
-                            <div class="schulen_teamevents_content_title">
-                                <p class="schulen_teamevents_content_title_text">Halbe oder ganze Tage für Schulen</p>
-                            </div>
+                <!-- schulen und teamevents slider start -->
 
-                            <div class="schulen_teamevents_content_subtitle">
-                                <p class="schulen_teamevents_content_subtitle_text">Von der ersten Klasse bis zur
-                                    Ingenieurs-Schulung</p>
-                            </div>
+                <!-- Slider main container -->
+                <div class="swiper swiper-schulen_teamevents">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="schulen_teamevents_card card">
+                                <div class="schulen_teamevents_card_content">
+                                    <div class="schulen_teamevents_content_title">
+                                        <p class="schulen_teamevents_content_title_text">Halbe oder ganze Tage für
+                                            Schulen</p>
+                                    </div>
 
-                            <div class="schulen_teamevents_content_dots">
-                                <div class="schulen_teamevents_content_dot"></div>
+                                    <div class="schulen_teamevents_content_subtitle">
+                                        <p class="schulen_teamevents_content_subtitle_text">Von der ersten Klasse bis
+                                            zur
+                                            Ingenieurs-Schulung</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="schulen_teamevents_card card">
+                                <div class="schulen_teamevents_card_content">
+                                    <div class="schulen_teamevents_content_title">
+                                        <p class="schulen_teamevents_content_title_text">Teamevents</p>
+                                    </div>
+
+                                    <div class="schulen_teamevents_content_subtitle">
+                                        <p class="schulen_teamevents_content_subtitle_text">Bis maximal 40 Personen
+                                            jeden Alters</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination light-pagination"></div>
                 </div>
-                <!-- schulen und teamvents cards end -->
+                <!-- schulen und teamvents slider end -->
                 <!-- schulen und teamevents start -->
 
                 <div class="button button-light">
@@ -223,10 +317,10 @@
 
         <!-- eintrittspreise start -->
 
-        <section class="eintrittspreise">
+        <section class="eintrittspreise" id="Eintrittspreise">
             <div class="wrapper">
                 <div class="eintrittspreise_title">
-                    <p class="eintrittspreise_title_text">Eintrittpreise</p>
+                    <p class="eintrittspreise_title_text">Eintrittspreise</p>
                 </div>
 
                 <!-- preiskarten start -->
@@ -279,7 +373,8 @@
                             <div class="eintrittspreise_subcard_red_message">
                                 <p class="eintrittspreise_subcard_red_message_text">
                                     *Kinder bis 7 Jahren müssen von einer
-                                    Person über 16 Jahren beaufsichtigt werden. Die Aufsichtsperson bezahlt Preistabelle
+                                    Person über 16 Jahren beaufsichtigt werden. Die Aufsichtsperson bezahlt gemäss
+                                    Preistabelle
                                     (max. 3 Kinder pro erwachsene Person).
                                 </p>
                             </div>
@@ -303,7 +398,7 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">Erz. & Kind</p>
+                                            <p class="eintrittspreise_subcard_content_line_item_text">Erw. & Kind</p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
                                             <p class="eintrittspreise_subcard_content_line_item_text">CHF 31 / 46</p>
@@ -312,7 +407,7 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">Erz. & 2 Kinder
+                                            <p class="eintrittspreise_subcard_content_line_item_text">Erw. & 2 Kinder
                                             </p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
@@ -322,7 +417,7 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">2 Erz. & Kind
+                                            <p class="eintrittspreise_subcard_content_line_item_text">2 Erw. & Kind
                                             </p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
@@ -332,7 +427,7 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">2 Erz. & 2 Kinder
+                                            <p class="eintrittspreise_subcard_content_line_item_text">2 Erw. & 2 Kinder
                                             </p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
@@ -342,7 +437,8 @@
 
                                     <tr class="eintrittspreise_subcard_content_line">
                                         <td class="eintrittspreise_subcard_content_line_item">
-                                            <p class="eintrittspreise_subcard_content_line_item_text">jedes weitere Kind <br> (max. 2)
+                                            <p class="eintrittspreise_subcard_content_line_item_text">jedes weitere Kind
+                                                <br> (max. 2)
                                             </p>
                                         </td>
                                         <td class="eintrittspreise_subcard_content_line_item">
@@ -378,9 +474,6 @@
                                     <br>
                                     vor Schliessung
                                 </p>
-                            </div>
-                            <div class="eintrittspreise_subcard_subtitle">
-                                <p class="eintrittspreise_subcard_subtitle_text">min. 2 Stunden vor Schliessung</p>
                             </div>
 
                             <table class="eintrittspreise_subcard_content">
@@ -517,7 +610,7 @@
                             <div class="eintrittspreise_message_yellow">
                                 <p class="eintrittspreise_message_yellow_text">
                                     Der BAU-CHASCHTE öffnet auch ausserhalb der Öffnungszeiten für Sie:
-                                    Geburtstag-Event, Team-Event, Besuch mit Schulklasse, u.s.w. Kontaktieren Sie uns
+                                    Geburtstag-Event, Team-Event, Besuch mit Schulklasse, usw. <br> Kontaktieren Sie uns
                                     über
                                     das Kontaktformular oder per Email!
                                 </p>
@@ -528,7 +621,8 @@
 
                     <div class="button button-dark">
                         <div class="button-wrap">
-                            <a href="/mobile-html/mobile_öffnungszeiten.html" class="rectangle_button_text_link color_light">
+                            <a href="/mobile-html/mobile_öffnungszeiten.html"
+                                class="rectangle_button_text_link color_light">
                                 <div class="rectangle_button">
                                     <p class="rectangle_button_text">Öffnungszeiten</p>
                                     <div class="icon"><img src="/mobile-assets/svg/arrow-up-right.svg" alt="arrow"
@@ -558,7 +652,7 @@
 
         <!-- footer start -->
 
-        <section class="footer">
+        <section class="footer" id="Kontakt">
             <div class="wrapper">
                 <div class="small_footer_wrapper">
 
@@ -613,7 +707,7 @@
 
                     <div class="footer_content">
                         <div class="footer_content_parken">
-                            <p class="footer_content_parken_text">Rund 10 Kostenlose Parkplätze stehen Ihnen vor dem
+                            <p class="footer_content_parken_text">Rund 10 kostenlose Parkplätze stehen Ihnen vor dem
                                 Bau-Chaschte zur Verfügung. </p>
                         </div>
                     </div>
@@ -621,13 +715,22 @@
 
                 <div class="footer_links">
                     <div class="footer_link eins">
-                        <a href="mailto:info@bau-chaschte.ch" class="footer_link_text">info@bau-chaschte.ch</a>
+                        <a href="http://www.youtube.com/@BAU-CHASCHTE">
+                            <div class="icon"><img src="/mobile-assets/svg/mdi_youtube.svg" alt="arrow" class="nav_pic">
+                            </div>
+                        </a>
                     </div>
                     <div class="footer_link zwei">
-                        <a href="http://www.youtube.com/@BAU-CHASCHTE" class="footer_link_text">YouTube</a>
+                        <a href="mailto:info@bau-chaschte.ch">
+                            <div class="icon"><img src="/mobile-assets/svg/email.svg" alt="arrow" class="nav_pic">
+                            </div>
+                        </a>
                     </div>
                     <div class="footer_link drei">
-                        <a href="https://www.instagram.com/bau_chaschte/" class="footer_link_text">Instagram</a>
+                        <a href="https://www.instagram.com/bau_chaschte/">
+                            <div class="icon"><img src="/mobile-assets/svg/mdi_instagram.svg" alt="arrow"
+                                    class="nav_pic"></div>
+                        </a>
                     </div>
                 </div>
 
@@ -644,7 +747,29 @@
     <!-- main end -->
 
 </body>
-
+<script src="/mobile-js/swiper-bundle.min.js"></script>
 <script src="/mobile-js/mobile-scripts.js"></script>
+<script>
+    // header js start
+
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+        let currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Scroll down
+            header.style.top = "-85px"; // Adjust this value if needed
+        } else {
+            // Scroll up
+            header.style.top = "0";
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+
+    // header js end
+</script>
 
 </html>

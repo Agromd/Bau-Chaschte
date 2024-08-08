@@ -140,11 +140,12 @@ header img {
 
 
 .news a {
-  text-decoration: underline;
-  color: #616161;
+  text-decoration: none;
+  color: #404040;
 }
 
 .message {
+  width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -153,7 +154,6 @@ header img {
   background-color: var(--yellow-base);
   border-radius: 25px;
   transition: .3s;
-  cursor: default;
   margin-bottom: 10vh;
 }
 
